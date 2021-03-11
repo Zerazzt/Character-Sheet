@@ -1,0 +1,5 @@
+Darkvision: 60
+Dwarven Resilience
+Dwarven Combat Training
+Tool Proficiency
+Stonecunning
