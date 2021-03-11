@@ -2,13 +2,6 @@
 
 namespace CppCLRWinformsProjekt {
 
-	using namespace System;
-	using namespace System::ComponentModel;
-	using namespace System::Collections;
-	using namespace System::Windows::Forms;
-	using namespace System::Data;
-	using namespace System::Drawing;
-
 	/// <summary>
 	/// Zusammenfassung für Form1
 	/// </summary>
@@ -18,12 +11,14 @@ namespace CppCLRWinformsProjekt {
 		Form1(void)
 		{
 			InitializeFormBody();
+			createLoadBar();
 			//
 			//TODO: Konstruktorcode hier hinzufügen.
 			//
 		}
 
 	protected:
+	private: System::Windows::Forms::Button^ button1;
 		/// <summary>
 		/// Verwendete Ressourcen bereinigen.
 		/// </summary>
@@ -47,6 +42,7 @@ namespace CppCLRWinformsProjekt {
 		/// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
 		/// </summary>
 		void InitializeFormBody(void);
+		void createLoadBar(void);
 #pragma endregion
 	};
 }
