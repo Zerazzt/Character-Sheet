@@ -17,7 +17,7 @@ namespace CppCLRWinformsProjekt {
 	public:
 		Form1(void)
 		{
-			InitializeComponent();
+			InitializeFormBody();
 			//
 			//TODO: Konstruktorcode hier hinzufügen.
 			//
@@ -46,14 +46,7 @@ namespace CppCLRWinformsProjekt {
 		/// Erforderliche Methode für die Designerunterstützung.
 		/// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
 		/// </summary>
-		void InitializeComponent(void)
-		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Form1";
-			this->Padding = System::Windows::Forms::Padding(0);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-		}
+		void InitializeFormBody(void);
 #pragma endregion
 	};
 }
