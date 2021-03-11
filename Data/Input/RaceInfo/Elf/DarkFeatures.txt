@@ -1,4 +1,0 @@
-Darkvision: 120
-Sunlight Sensitivity
-Drow Magic
-Drow Weapon Training

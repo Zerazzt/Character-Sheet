@@ -1,5 +1,0 @@
-C:\Users\2003i\Documents\GitHub\Character Sheet\Debug\Character Sheet.vcxprojAssemblyReference.cache
-C:\Users\2003i\Documents\GitHub\Character Sheet\Debug\Character_Sheet.Form1.resources
-C:\Users\2003i\Documents\GitHub\Character Sheet\Debug\Character Sheet.vcxproj.GenerateResource.cache
-C:\Users\2003i\Documents\GitHub\Character Sheet\Debug\Character Sheet.exe
-C:\Users\2003i\Documents\GitHub\Character Sheet\Debug\Character Sheet.pdb
