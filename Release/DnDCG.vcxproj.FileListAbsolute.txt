@@ -1,0 +1,4 @@
+C:\Users\2003i\Desktop\DnDCG\Release\DnDCG.vcxprojAssemblyReference.cache
+C:\Users\2003i\Desktop\DnDCG\Release\DnDCG.Character_Generator.resources
+C:\Users\2003i\Desktop\DnDCG\Release\DnDCG.vcxproj.GenerateResource.cache
+C:\Users\2003i\Desktop\DnDCG\Release\DnDCG.exe

@@ -1,0 +1,4 @@
+﻿  CppCLR_WinformsProjekt.cpp
+C:\Users\2003i\Desktop\DnDCG\Character_Generator.h(2653,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\2003i\Desktop\DnDCG\Character_Generator.h(2837,8): warning C4101: 'line': unreferenced local variable
+  DnDCG.vcxproj -> C:\Users\2003i\Desktop\DnDCG\Release\DnDCG.exe

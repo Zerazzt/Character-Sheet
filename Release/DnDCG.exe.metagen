@@ -1,0 +1,49 @@
+  DnDCG.Character_Generator.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly DnDCG, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CppCLRWinformsProjekt.Character_Generator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    saveCharacter(Object, EventArgs): PrivateScope, Public, HideBySig
+    loadCharacter(Object, EventArgs): PrivateScope, Public, HideBySig
+    setBackground(Object, EventArgs): PrivateScope, Public, HideBySig
+    setClass(Object, EventArgs): PrivateScope, Public, HideBySig
+    setSubclass(Object, EventArgs): PrivateScope, Public, HideBySig
+    setRace(Object, EventArgs): PrivateScope, Public, HideBySig
+    setSubrace(Object, EventArgs): PrivateScope, Public, HideBySig
+    setLevel(Object, EventArgs): PrivateScope, Public, HideBySig
+    setStrength(Object, EventArgs): PrivateScope, Public, HideBySig
+    setDexterity(Object, EventArgs): PrivateScope, Public, HideBySig
+    setConstitution(Object, EventArgs): PrivateScope, Public, HideBySig
+    setIntelligence(Object, EventArgs): PrivateScope, Public, HideBySig
+    setWisdom(Object, EventArgs): PrivateScope, Public, HideBySig
+    setCharisma(Object, EventArgs): PrivateScope, Public, HideBySig
+    genAbilityScores(Object, EventArgs): PrivateScope, Public, HideBySig
+    genScore(): PrivateScope, Public, HideBySig
+    randomAll(Object, EventArgs): PrivateScope, Public, HideBySig
+    randomBackground(Object, EventArgs): PrivateScope, Public, HideBySig
+    randomClass(Object, EventArgs): PrivateScope, Public, HideBySig
+    randomRace(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld4(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld6(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld8(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld10(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld12(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld20(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolld100(Object, EventArgs): PrivateScope, Public, HideBySig
+    rolldx(Object, EventArgs): PrivateScope, Public, HideBySig
+    random(Int32, Int32): PrivateScope, Public, HideBySig

@@ -1,0 +1,5 @@
+C:\Users\2003i\Desktop\DnDCG\Debug\DnDCG.vcxprojAssemblyReference.cache
+C:\Users\2003i\Desktop\DnDCG\Debug\DnDCG.Character_Generator.resources
+C:\Users\2003i\Desktop\DnDCG\Debug\DnDCG.vcxproj.GenerateResource.cache
+C:\Users\2003i\Desktop\DnDCG\Debug\DnDCG.exe
+C:\Users\2003i\Desktop\DnDCG\Debug\DnDCG.pdb

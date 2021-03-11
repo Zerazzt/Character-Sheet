@@ -1,0 +1,4 @@
+Darkvision: 60
+Elf Weapon Training
+Cantrip
+Extra Language
