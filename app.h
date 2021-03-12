@@ -9,8 +9,6 @@ namespace CppCLRWinformsProjekt {
 			InitializeFormBody();
 			createLoadBar();
 		}
-
-	protected:
 	// Loading bar stuff
 	private: System::Windows::Forms::Label^ NameLabel;
 	private: System::Windows::Forms::Label^ LevelLabel;
@@ -34,13 +32,13 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Button^ RandomizeRace;
 	private: System::Windows::Forms::Button^ Save;
 	private: System::Windows::Forms::Button^ Load;
-		~application()
+	~application()
+	{
+		if (components)
 		{
-			if (components)
-			{
-				delete components;
-			}
+			delete components;
 		}
+	}
 
 	private:
 		System::ComponentModel::Container^ components;
