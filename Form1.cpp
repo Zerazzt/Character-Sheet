@@ -17,6 +17,7 @@ void CppCLRWinformsProjekt::Form1::InitializeFormBody(void)
 }
 
 void CppCLRWinformsProjekt::Form1::createLoadBar(void) {
+	this->SuspendLayout();
 	this->button1 = (gcnew System::Windows::Forms::Button());
 	this->components->Add(button1);
 	this->button1->FlatStyle = System::Windows::Forms::FlatStyle::System;
@@ -25,4 +26,5 @@ void CppCLRWinformsProjekt::Form1::createLoadBar(void) {
 	this->button1->Size = System::Drawing::Size(150, 20);
 	this->button1->TabIndex = 9;
 	this->button1->Text = L"Button 1";
+	this->Controls->Add(this->button1);
 }
