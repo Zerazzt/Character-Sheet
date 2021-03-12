@@ -1,12 +1,10 @@
 #include "pch.h"
-#include "Form1.h"
-
-using namespace System::Windows::Forms;
+#include "app.h"
 
 [System::STAThread]
 int main() {
-	Application::EnableVisualStyles();
-	Application::SetCompatibleTextRenderingDefault(false);
-	Application::Run(gcnew CppCLRWinformsProjekt::Form1()); 
+	System::Windows::Forms::Application::EnableVisualStyles();
+	System::Windows::Forms::Application::SetCompatibleTextRenderingDefault(false);
+	System::Windows::Forms::Application::Run(gcnew CppCLRWinformsProjekt::application()); 
 	return 0;
 }
