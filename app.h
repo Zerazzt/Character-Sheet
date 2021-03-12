@@ -9,7 +9,7 @@ namespace CppCLRWinformsProjekt {
 			InitializeFormBody();
 			createLoadBar();
 		}
-	// Loading bar stuff
+	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
 	private: System::Windows::Forms::Label^ LevelLabel;
 	private: System::Windows::Forms::Label^ BackgroundLabel;
@@ -46,6 +46,8 @@ namespace CppCLRWinformsProjekt {
 #pragma region Windows Form Designer generated code
 		void InitializeFormBody(void);
 		void createLoadBar(void);
+		void saveCharacter(System::Object^ send, System::EventArgs^ e);
+		void loadCharacter(System::Object^ send, System::EventArgs^ e);
 #pragma endregion
 	};
 }

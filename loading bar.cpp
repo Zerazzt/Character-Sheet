@@ -200,6 +200,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->Save->TabIndex = 0;
 	this->Save->Name = L"Save";
 	this->Save->Text = L"Save";
+	this->Save->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::saveCharacter);
 	this->Controls->Add(this->Save);
 
 	this->Load = (gcnew System::Windows::Forms::Button());
@@ -210,5 +211,6 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->Load->TabIndex = 0;
 	this->Load->Name = L"Load";
 	this->Load->Text = L"Load";
+	this->Load->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::loadCharacter);
 	this->Controls->Add(this->Load);
 }
