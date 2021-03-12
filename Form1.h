@@ -11,7 +11,12 @@ namespace CppCLRWinformsProjekt {
 		}
 
 	protected:
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ RandomizeAll;
+	private: System::Windows::Forms::Button^ RandomizeClass;
+	private: System::Windows::Forms::Button^ RandomizeBackground;
+	private: System::Windows::Forms::Button^ RandomizeRace;
+	private: System::Windows::Forms::Button^ Save;
+	private: System::Windows::Forms::Button^ Load;
 		~Form1()
 		{
 			if (components)
@@ -21,7 +26,7 @@ namespace CppCLRWinformsProjekt {
 		}
 
 	private:
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		void InitializeFormBody(void);
