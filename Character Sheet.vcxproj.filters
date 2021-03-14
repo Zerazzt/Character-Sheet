@@ -49,6 +49,9 @@
     <ClCompile Include="saveload.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="ability scores.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">

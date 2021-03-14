@@ -150,6 +150,7 @@
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ability scores.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="form body.cpp" />
