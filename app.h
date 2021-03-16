@@ -1,5 +1,4 @@
 #pragma once
-
 namespace CppCLRWinformsProjekt {
 	public ref class application : public System::Windows::Forms::Form
 	{
@@ -53,6 +52,7 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ CharismaLabel;
 	private: System::Windows::Forms::NumericUpDown^ charCharisma;
 	private: System::Windows::Forms::Label^ chaMod;
+	private: System::Windows::Forms::Button^ rollAbilityScores;
 
 	~application()
 	{
@@ -69,8 +69,24 @@ namespace CppCLRWinformsProjekt {
 		void InitializeFormBody(void);
 		void createLoadBar(void);
 		void createAbilityScores(void);
+		void setBackground(System::Object^ send, System::EventArgs^ e);
+		void setClass(System::Object^ send, System::EventArgs^ e);
+		void setSubclass(System::Object^ send, System::EventArgs^ e);
+		void setRace(System::Object^ send, System::EventArgs^ e);
+		void setSubrace(System::Object^ send, System::EventArgs^ e);
+		void randomizeAll(System::Object^ send, System::EventArgs^ e);
+		void randomizeBackground(System::Object^ send, System::EventArgs^ e);
+		void randomizeClass(System::Object^ send, System::EventArgs^ e);
+		void randomizeRace(System::Object^ send, System::EventArgs^ e);
 		void saveCharacter(System::Object^ send, System::EventArgs^ e);
 		void loadCharacter(System::Object^ send, System::EventArgs^ e);
+		void updateStrength(System::Object^ send, System::EventArgs^ e);
+		void updateDexterity(System::Object^ send, System::EventArgs^ e);
+		void updateConstitution(System::Object^ send, System::EventArgs^ e);
+		void updateIntelligence(System::Object^ send, System::EventArgs^ e);
+		void updateWisdom(System::Object^ send, System::EventArgs^ e);
+		void updateCharisma(System::Object^ send, System::EventArgs^ e);
+		void generateAbilityScores(System::Object^ send, System::EventArgs^ e);
 #pragma endregion
 	};
 }

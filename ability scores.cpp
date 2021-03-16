@@ -17,6 +17,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charStrength->Size = System::Drawing::Size(35, 20);
 	this->charStrength->Name = L"charStrength";
 	this->charStrength->TabIndex = 0;
+	this->charStrength->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
 	this->Controls->Add(this->charStrength);
 
 	this->strMod = (gcnew System::Windows::Forms::Label());
@@ -41,6 +42,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charDexterity->Size = System::Drawing::Size(35, 20);
 	this->charDexterity->Name = L"charDexterity";
 	this->charDexterity->TabIndex = 0;
+	this->charDexterity->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
 	this->Controls->Add(this->charDexterity);
 
 	this->dexMod = (gcnew System::Windows::Forms::Label());
@@ -65,6 +67,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charConstitution->Size = System::Drawing::Size(35, 20);
 	this->charConstitution->Name = L"charConstitution";
 	this->charConstitution->TabIndex = 0;
+	this->charConstitution->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateConstitution);
 	this->Controls->Add(this->charConstitution);
 
 	this->conMod = (gcnew System::Windows::Forms::Label());
@@ -89,6 +92,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charIntelligence->Size = System::Drawing::Size(35, 20);
 	this->charIntelligence->Name = L"charIntelligence";
 	this->charIntelligence->TabIndex = 0;
+	this->charIntelligence->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
 	this->Controls->Add(this->charIntelligence);
 
 	this->intMod = (gcnew System::Windows::Forms::Label());
@@ -113,6 +117,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charWisdom->Size = System::Drawing::Size(35, 20);
 	this->charWisdom->Name = L"charWisdom";
 	this->charWisdom->TabIndex = 0;
+	this->charWisdom->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
 	this->Controls->Add(this->charWisdom);
 
 	this->wisMod = (gcnew System::Windows::Forms::Label());
@@ -137,6 +142,7 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->charCharisma->Size = System::Drawing::Size(35, 20);
 	this->charCharisma->Name = L"charCharisma";
 	this->charCharisma->TabIndex = 0;
+	this->charCharisma->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
 	this->Controls->Add(this->charCharisma);
 
 	this->chaMod = (gcnew System::Windows::Forms::Label());
@@ -146,4 +152,15 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->chaMod->Name = L"chaMod";
 	this->chaMod->Text = L"-5";
 	this->Controls->Add(this->chaMod);
+
+	this->rollAbilityScores = (gcnew System::Windows::Forms::Button());
+	this->components->Add(this->rollAbilityScores);
+	this->rollAbilityScores->FlatStyle = System::Windows::Forms::FlatStyle::System;
+	this->rollAbilityScores->Location = System::Drawing::Point(5, 530);
+	this->rollAbilityScores->Size = System::Drawing::Size(65, 65);
+	this->rollAbilityScores->TabIndex = 0;
+	this->rollAbilityScores->Name = L"rollAbilityScores";
+	this->rollAbilityScores->Text = L"Roll Ability Scores";
+	this->rollAbilityScores->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::generateAbilityScores);
+	this->Controls->Add(this->rollAbilityScores);
 }
