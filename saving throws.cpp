@@ -17,7 +17,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->components->Add(this->probonValue);
 	this->probonValue->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->probonValue->Location = System::Drawing::Point(205, 75);
-	this->probonValue->Size = System::Drawing::Size(10, 20);
+	this->probonValue->Size = System::Drawing::Size(10.F, 20);
 	this->probonValue->TabIndex = 0;
 	this->probonValue->Name = L"probonValue";
 	this->probonValue->Text = L"0";
@@ -35,7 +35,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->strST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->strST);
-	this->strST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->strST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->strST->Location = System::Drawing::Point(90, 95);
 	this->strST->Size = System::Drawing::Size(40, 20);
 	this->strST->TabIndex = 0;
@@ -45,7 +45,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->strSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->strSTLabel);
-	this->strSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->strSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->strSTLabel->Location = System::Drawing::Point(130, 95);
 	this->strSTLabel->Size = System::Drawing::Size(60, 20);
 	this->strSTLabel->TabIndex = 0;
@@ -55,8 +55,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->dexST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->dexST);
-	this->dexST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->dexST->Location = System::Drawing::Point(90, 113);
+	this->dexST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->dexST->Location = System::Drawing::Point(90, 112);
 	this->dexST->Size = System::Drawing::Size(40, 20);
 	this->dexST->TabIndex = 0;
 	this->dexST->Name = L"dexST";
@@ -65,8 +65,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->dexSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->dexSTLabel);
-	this->dexSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->dexSTLabel->Location = System::Drawing::Point(130, 115);
+	this->dexSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->dexSTLabel->Location = System::Drawing::Point(130, 112);
 	this->dexSTLabel->Size = System::Drawing::Size(70, 20);
 	this->dexSTLabel->TabIndex = 0;
 	this->dexSTLabel->Name = L"dexSTLabel";
@@ -75,8 +75,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->conST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->conST);
-	this->conST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->conST->Location = System::Drawing::Point(90, 135);
+	this->conST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->conST->Location = System::Drawing::Point(90, 129);
 	this->conST->Size = System::Drawing::Size(40, 20);
 	this->conST->TabIndex = 0;
 	this->conST->Name = L"conST";
@@ -85,8 +85,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->conSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->conSTLabel);
-	this->conSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->conSTLabel->Location = System::Drawing::Point(130, 135);
+	this->conSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->conSTLabel->Location = System::Drawing::Point(130, 129);
 	this->conSTLabel->Size = System::Drawing::Size(80, 20);
 	this->conSTLabel->TabIndex = 0;
 	this->conSTLabel->Name = L"conSTLabel";
@@ -95,8 +95,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->intST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->intST);
-	this->intST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->intST->Location = System::Drawing::Point(90, 155);
+	this->intST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->intST->Location = System::Drawing::Point(90, 146);
 	this->intST->Size = System::Drawing::Size(40, 20);
 	this->intST->TabIndex = 0;
 	this->intST->Name = L"intST";
@@ -105,8 +105,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->intSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->intSTLabel);
-	this->intSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->intSTLabel->Location = System::Drawing::Point(130, 155);
+	this->intSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->intSTLabel->Location = System::Drawing::Point(130, 146);
 	this->intSTLabel->Size = System::Drawing::Size(80, 20);
 	this->intSTLabel->TabIndex = 0;
 	this->intSTLabel->Name = L"intSTLabel";
@@ -115,8 +115,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->wisST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->wisST);
-	this->wisST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->wisST->Location = System::Drawing::Point(90, 175);
+	this->wisST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->wisST->Location = System::Drawing::Point(90, 163);
 	this->wisST->Size = System::Drawing::Size(40, 20);
 	this->wisST->TabIndex = 0;
 	this->wisST->Name = L"wisST";
@@ -125,8 +125,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->wisSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->wisSTLabel);
-	this->wisSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->wisSTLabel->Location = System::Drawing::Point(130, 175);
+	this->wisSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->wisSTLabel->Location = System::Drawing::Point(130, 163);
 	this->wisSTLabel->Size = System::Drawing::Size(60, 20);
 	this->wisSTLabel->TabIndex = 0;
 	this->wisSTLabel->Name = L"wisSTLabel";
@@ -135,8 +135,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->chaST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->chaST);
-	this->chaST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->chaST->Location = System::Drawing::Point(90, 195);
+	this->chaST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->chaST->Location = System::Drawing::Point(90, 180);
 	this->chaST->Size = System::Drawing::Size(40, 20);
 	this->chaST->TabIndex = 0;
 	this->chaST->Name = L"chaST";
@@ -145,8 +145,8 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 
 	this->chaSTLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->chaSTLabel);
-	this->chaSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->chaSTLabel->Location = System::Drawing::Point(130, 195);
+	this->chaSTLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+	this->chaSTLabel->Location = System::Drawing::Point(130, 180);
 	this->chaSTLabel->Size = System::Drawing::Size(70, 20);
 	this->chaSTLabel->TabIndex = 0;
 	this->chaSTLabel->Name = L"chaSTLabel";
