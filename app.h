@@ -8,6 +8,7 @@ namespace CppCLRWinformsProjekt {
 			InitializeFormBody();
 			createLoadBar();
 			createAbilityScores();
+			createSavingThrows();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -54,6 +55,23 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ chaMod;
 	private: System::Windows::Forms::Button^ rollAbilityScores;
 
+	// Saving throw elements
+	private: System::Windows::Forms::Label^ probonLabel;
+	private: System::Windows::Forms::Label^ probonValue;
+	private: System::Windows::Forms::Label^ SavingThrows;
+	private: System::Windows::Forms::CheckBox^ strST;
+	private: System::Windows::Forms::Label^ strSTLabel;
+	private: System::Windows::Forms::CheckBox^ dexST;
+	private: System::Windows::Forms::Label^ dexSTLabel;
+	private: System::Windows::Forms::CheckBox^ conST;
+	private: System::Windows::Forms::Label^ conSTLabel;
+	private: System::Windows::Forms::CheckBox^ intST;
+	private: System::Windows::Forms::Label^ intSTLabel;
+	private: System::Windows::Forms::CheckBox^ wisST;
+	private: System::Windows::Forms::Label^ wisSTLabel;
+	private: System::Windows::Forms::CheckBox^ chaST;
+	private: System::Windows::Forms::Label^ chaSTLabel;
+
 	~application()
 	{
 		if (components)
@@ -69,6 +87,8 @@ namespace CppCLRWinformsProjekt {
 		void InitializeFormBody(void);
 		void createLoadBar(void);
 		void createAbilityScores(void);
+		void createSavingThrows(void);
+
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);
 		void setSubclass(System::Object^ send, System::EventArgs^ e);

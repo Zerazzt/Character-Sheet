@@ -170,6 +170,7 @@
     <ClCompile Include="race.cpp" />
     <ClCompile Include="randomize.cpp" />
     <ClCompile Include="saveload.cpp" />
+    <ClCompile Include="saving throws.cpp" />
     <ClCompile Include="strength functions.cpp" />
     <ClCompile Include="wisdom functions.cpp" />
   </ItemGroup>
