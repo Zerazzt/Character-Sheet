@@ -71,6 +71,62 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::CheckBox^ chaST;
 	private: System::Windows::Forms::Label^ chaSTLabel;
 
+	// Skill elements
+	private: System::Windows::Forms::CheckBox^ acrobaticsPro;
+	private: System::Windows::Forms::CheckBox^ acrobaticsExp;
+	private: System::Windows::Forms::Label^ acrobaticsLabel;
+	private: System::Windows::Forms::CheckBox^ animalhandlingPro;
+	private: System::Windows::Forms::CheckBox^ animalhandlingExp;
+	private: System::Windows::Forms::Label^ animalhandlingLabel;
+	private: System::Windows::Forms::CheckBox^ arcanaPro;
+	private: System::Windows::Forms::CheckBox^ arcanaExp;
+	private: System::Windows::Forms::Label^ arcanaLabel;
+	private: System::Windows::Forms::CheckBox^ athleticsPro;
+	private: System::Windows::Forms::CheckBox^ athleticsExp;
+	private: System::Windows::Forms::Label^ athleticsLabel;
+	private: System::Windows::Forms::CheckBox^ deceptionPro;
+	private: System::Windows::Forms::CheckBox^ deceptionExp;
+	private: System::Windows::Forms::Label^ deceptionLabel;
+	private: System::Windows::Forms::CheckBox^ historyPro;
+	private: System::Windows::Forms::CheckBox^ historyExp;
+	private: System::Windows::Forms::Label^ historyLabel;
+	private: System::Windows::Forms::CheckBox^ insightPro;
+	private: System::Windows::Forms::CheckBox^ insightExp;
+	private: System::Windows::Forms::Label^ insightLabel;
+	private: System::Windows::Forms::CheckBox^ intimidationPro;
+	private: System::Windows::Forms::CheckBox^ intimidationExp;
+	private: System::Windows::Forms::Label^ intimidationLabel;
+	private: System::Windows::Forms::CheckBox^ investigationPro;
+	private: System::Windows::Forms::CheckBox^ investigationExp;
+	private: System::Windows::Forms::Label^ investigationLabel;
+	private: System::Windows::Forms::CheckBox^ medicinePro;
+	private: System::Windows::Forms::CheckBox^ medicineExp;
+	private: System::Windows::Forms::Label^ medicineLabel;
+	private: System::Windows::Forms::CheckBox^ naturePro;
+	private: System::Windows::Forms::CheckBox^ natureExp;
+	private: System::Windows::Forms::Label^ natureLabel;
+	private: System::Windows::Forms::CheckBox^ perceptionPro;
+	private: System::Windows::Forms::CheckBox^ perceptionExp;
+	private: System::Windows::Forms::Label^ perceptionLabel;
+	private: System::Windows::Forms::CheckBox^ performancePro;
+	private: System::Windows::Forms::CheckBox^ performanceExp;
+	private: System::Windows::Forms::Label^ performanceLabel;
+	private: System::Windows::Forms::CheckBox^ persuasionPro;
+	private: System::Windows::Forms::CheckBox^ persuasionExp;
+	private: System::Windows::Forms::Label^ persuasionLabel;
+	private: System::Windows::Forms::CheckBox^ religionPro;
+	private: System::Windows::Forms::CheckBox^ religionExp;
+	private: System::Windows::Forms::Label^ religionLabel;
+	private: System::Windows::Forms::CheckBox^ sleightofhandPro;
+	private: System::Windows::Forms::CheckBox^ sleightofhandExp;
+	private: System::Windows::Forms::Label^ sleightofhandLabel;
+	private: System::Windows::Forms::CheckBox^ stealthPro;
+	private: System::Windows::Forms::CheckBox^ stealthExp;
+	private: System::Windows::Forms::Label^ stealthLabel;
+	private: System::Windows::Forms::CheckBox^ survivalPro;
+	private: System::Windows::Forms::CheckBox^ survivalExp;
+	private: System::Windows::Forms::Label^ survivalLabel;
+
 	~application()
 	{
 		if (components)
