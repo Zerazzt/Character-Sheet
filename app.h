@@ -58,7 +58,6 @@ namespace CppCLRWinformsProjekt {
 	// Saving throw elements
 	private: System::Windows::Forms::Label^ probonLabel;
 	private: System::Windows::Forms::Label^ probonValue;
-	private: System::Windows::Forms::Label^ SavingThrows;
 	private: System::Windows::Forms::CheckBox^ strST;
 	private: System::Windows::Forms::Label^ strSTLabel;
 	private: System::Windows::Forms::CheckBox^ dexST;

@@ -23,16 +23,6 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->probonValue->Text = L"0";
 	this->Controls->Add(this->probonValue);
 
-	this->SavingThrows = (gcnew System::Windows::Forms::Label());
-	this->components->Add(this->SavingThrows);
-	this->SavingThrows->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->SavingThrows->Location = System::Drawing::Point();
-	this->SavingThrows->Size = System::Drawing::Size();
-	this->SavingThrows->TabIndex = 0;
-	this->SavingThrows->Name = L"SavingThrows";
-	this->SavingThrows->Text = L"Saving Throws";
-	this->Controls->Add(this->SavingThrows);
-
 	this->strST = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->strST);
 	this->strST->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
