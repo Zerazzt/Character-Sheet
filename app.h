@@ -9,6 +9,7 @@ namespace CppCLRWinformsProjekt {
 			createLoadBar();
 			createAbilityScores();
 			createSavingThrows();
+			createSkills();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -143,6 +144,7 @@ namespace CppCLRWinformsProjekt {
 		void createLoadBar(void);
 		void createAbilityScores(void);
 		void createSavingThrows(void);
+		void createSkills(void);
 
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);

@@ -85,6 +85,9 @@
     <ClCompile Include="saving throws.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="skills.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
