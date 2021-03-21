@@ -10,6 +10,7 @@ namespace CppCLRWinformsProjekt {
 			createAbilityScores();
 			createSavingThrows();
 			createSkills();
+			createCombatTrackerElements();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -159,6 +160,7 @@ namespace CppCLRWinformsProjekt {
 		void createAbilityScores(void);
 		void createSavingThrows(void);
 		void createSkills(void);
+		void createCombatTrackerElements(void);
 
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);
