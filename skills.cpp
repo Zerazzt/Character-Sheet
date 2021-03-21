@@ -51,7 +51,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->components->Add(this->animalhandlingLabel);
 	this->animalhandlingLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->animalhandlingLabel->Location = System::Drawing::Point(145, 235);
-	this->animalhandlingLabel->Size = System::Drawing::Size(120, 20);
+	this->animalhandlingLabel->Size = System::Drawing::Size(140, 20);
 	this->animalhandlingLabel->TabIndex = 0;
 	this->animalhandlingLabel->Name = L"animalhandlingLabel";
 	this->animalhandlingLabel->Text = L"Animal Handling (Wis)";
@@ -351,7 +351,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->performanceLabel->Size = System::Drawing::Size(120, 20);
 	this->performanceLabel->TabIndex = 0;
 	this->performanceLabel->Name = L"performanceLabel";
-	this->performanceLabel->Text = L"performance";
+	this->performanceLabel->Text = L"Performance (Cha)";
 	this->Controls->Add(this->performanceLabel);
 
 	this->persuasionPro = (gcnew System::Windows::Forms::CheckBox());
@@ -429,7 +429,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->components->Add(this->sleightofhandLabel);
 	this->sleightofhandLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->sleightofhandLabel->Location = System::Drawing::Point(145, 515);
-	this->sleightofhandLabel->Size = System::Drawing::Size(120, 20);
+	this->sleightofhandLabel->Size = System::Drawing::Size(140, 20);
 	this->sleightofhandLabel->TabIndex = 0;
 	this->sleightofhandLabel->Name = L"sleightofhandLabel";
 	this->sleightofhandLabel->Text = L"Sleight of Hand (Dex)";
