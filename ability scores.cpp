@@ -9,14 +9,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->StrengthLabel->Size = System::Drawing::Size(80, 20);
 	this->StrengthLabel->Name = L"StrengthLabel";
 	this->StrengthLabel->Text = L"Strength";
-	this->TabIndex = 0;
 	this->Controls->Add(this->StrengthLabel);
 
 	this->charStrength = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charStrength->Location = System::Drawing::Point(8, 100);
 	this->charStrength->Size = System::Drawing::Size(35, 20);
 	this->charStrength->Name = L"charStrength";
-	this->charStrength->TabIndex = 0;
 	this->charStrength->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
 	this->Controls->Add(this->charStrength);
 
@@ -34,14 +32,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->DexterityLabel->Size = System::Drawing::Size(80, 20);
 	this->DexterityLabel->Name = L"DexterityLabel";
 	this->DexterityLabel->Text = L"Dexterity";
-	this->TabIndex = 0;
 	this->Controls->Add(this->DexterityLabel);
 
 	this->charDexterity = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charDexterity->Location = System::Drawing::Point(8, 175);
 	this->charDexterity->Size = System::Drawing::Size(35, 20);
 	this->charDexterity->Name = L"charDexterity";
-	this->charDexterity->TabIndex = 0;
 	this->charDexterity->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
 	this->Controls->Add(this->charDexterity);
 
@@ -59,14 +55,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->ConstitutionLabel->Size = System::Drawing::Size(80, 20);
 	this->ConstitutionLabel->Name = L"ConstitutionLabel";
 	this->ConstitutionLabel->Text = L"Constitution";
-	this->TabIndex = 0;
 	this->Controls->Add(this->ConstitutionLabel);
 
 	this->charConstitution = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charConstitution->Location = System::Drawing::Point(8, 250);
 	this->charConstitution->Size = System::Drawing::Size(35, 20);
 	this->charConstitution->Name = L"charConstitution";
-	this->charConstitution->TabIndex = 0;
 	this->charConstitution->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateConstitution);
 	this->Controls->Add(this->charConstitution);
 
@@ -84,14 +78,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->IntelligenceLabel->Size = System::Drawing::Size(80, 20);
 	this->IntelligenceLabel->Name = L"IntelligenceLabel";
 	this->IntelligenceLabel->Text = L"Intelligence";
-	this->TabIndex = 0;
 	this->Controls->Add(this->IntelligenceLabel);
 
 	this->charIntelligence = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charIntelligence->Location = System::Drawing::Point(8, 325);
 	this->charIntelligence->Size = System::Drawing::Size(35, 20);
 	this->charIntelligence->Name = L"charIntelligence";
-	this->charIntelligence->TabIndex = 0;
 	this->charIntelligence->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
 	this->Controls->Add(this->charIntelligence);
 
@@ -109,14 +101,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->WisdomLabel->Size = System::Drawing::Size(80, 20);
 	this->WisdomLabel->Name = L"WisdomLabel";
 	this->WisdomLabel->Text = L"Wisdom";
-	this->TabIndex = 0;
 	this->Controls->Add(this->WisdomLabel);
 
 	this->charWisdom = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charWisdom->Location = System::Drawing::Point(8, 400);
 	this->charWisdom->Size = System::Drawing::Size(35, 20);
 	this->charWisdom->Name = L"charWisdom";
-	this->charWisdom->TabIndex = 0;
 	this->charWisdom->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
 	this->Controls->Add(this->charWisdom);
 
@@ -134,14 +124,12 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->CharismaLabel->Size = System::Drawing::Size(80, 20);
 	this->CharismaLabel->Name = L"CharismaLabel";
 	this->CharismaLabel->Text = L"Charisma";
-	this->TabIndex = 0;
 	this->Controls->Add(this->CharismaLabel);
 
 	this->charCharisma = (gcnew System::Windows::Forms::NumericUpDown());
 	this->charCharisma->Location = System::Drawing::Point(8, 475);
 	this->charCharisma->Size = System::Drawing::Size(35, 20);
 	this->charCharisma->Name = L"charCharisma";
-	this->charCharisma->TabIndex = 0;
 	this->charCharisma->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
 	this->Controls->Add(this->charCharisma);
 
@@ -158,7 +146,6 @@ void CppCLRWinformsProjekt::application::createAbilityScores(void)
 	this->rollAbilityScores->FlatStyle = System::Windows::Forms::FlatStyle::System;
 	this->rollAbilityScores->Location = System::Drawing::Point(5, 530);
 	this->rollAbilityScores->Size = System::Drawing::Size(65, 65);
-	this->rollAbilityScores->TabIndex = 0;
 	this->rollAbilityScores->Name = L"rollAbilityScores";
 	this->rollAbilityScores->Text = L"Roll Ability Scores";
 	this->rollAbilityScores->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::generateAbilityScores);
