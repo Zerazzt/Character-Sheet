@@ -128,6 +128,20 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::CheckBox^ survivalExp;
 	private: System::Windows::Forms::Label^ survivalLabel;
 
+	// Combat tracker elements
+	private: System::Windows::Forms::Label^ hitpointmaximumLabel;
+	private: System::Windows::Forms::NumericUpDown^ hitPointMaximum;
+	private: System::Windows::Forms::Label^ currenthitpointsLabel;
+	private: System::Windows::Forms::NumericUpDown^ currentHitPoints;
+	private: System::Windows::Forms::Label^ temporaryhitpointsLabel;
+	private: System::Windows::Forms::NumericUpDown^ temporaryHitPoints;
+	private: System::Windows::Forms::Label^ armourclassLabel;
+	private: System::Windows::Forms::NumericUpDown^ armourClass;
+	private: System::Windows::Forms::Label^ initiativemodifierLabel;
+	private: System::Windows::Forms::NumericUpDown^ initiativeModifier;
+	private: System::Windows::Forms::Label^ movementspeedLabel;
+	private: System::Windows::Forms::NumericUpDown^ movementSpeed;
+
 	~application()
 	{
 		if (components)
