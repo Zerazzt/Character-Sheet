@@ -88,6 +88,9 @@
     <ClCompile Include="skills.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="combat trackers.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">

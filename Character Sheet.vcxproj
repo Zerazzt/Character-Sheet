@@ -155,6 +155,7 @@
     <ClCompile Include="background.cpp" />
     <ClCompile Include="charisma functions.cpp" />
     <ClCompile Include="class.cpp" />
+    <ClCompile Include="combat trackers.cpp" />
     <ClCompile Include="constitution functions.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="dexterity functions.cpp" />
