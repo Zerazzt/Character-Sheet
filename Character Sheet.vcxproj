@@ -159,6 +159,7 @@
     <ClCompile Include="constitution functions.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="dexterity functions.cpp" />
+    <ClCompile Include="dice.cpp" />
     <ClCompile Include="form body.cpp" />
     <ClCompile Include="intelligence functions.cpp" />
     <ClCompile Include="loading bar.cpp" />

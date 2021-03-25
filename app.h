@@ -11,6 +11,7 @@ namespace CppCLRWinformsProjekt {
 			createSavingThrows();
 			createSkills();
 			createCombatTrackerElements();
+			createDiceElements();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -143,6 +144,40 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ movementspeedLabel;
 	private: System::Windows::Forms::NumericUpDown^ movementSpeed;
 
+	// Dice elements
+	private: System::Windows::Forms::NumericUpDown^ nd4;
+	private: System::Windows::Forms::Label^ d4Label;
+	private: System::Windows::Forms::Button^ d4Roll;
+	private: System::Windows::Forms::Label^ d4Result;
+	private: System::Windows::Forms::NumericUpDown^ nd6;
+	private: System::Windows::Forms::Label^ d6Label;
+	private: System::Windows::Forms::Button^ d6Roll;
+	private: System::Windows::Forms::Label^ d6Result;
+	private: System::Windows::Forms::NumericUpDown^ nd8;
+	private: System::Windows::Forms::Label^ d8Label;
+	private: System::Windows::Forms::Button^ d8Roll;
+	private: System::Windows::Forms::Label^ d8Result;
+	private: System::Windows::Forms::NumericUpDown^ nd10;
+	private: System::Windows::Forms::Label^ d10Label;
+	private: System::Windows::Forms::Button^ d10Roll;
+	private: System::Windows::Forms::Label^ d10Result;
+	private: System::Windows::Forms::NumericUpDown^ nd12;
+	private: System::Windows::Forms::Label^ d12Label;
+	private: System::Windows::Forms::Button^ d12Roll;
+	private: System::Windows::Forms::Label^ d12Result;
+	private: System::Windows::Forms::NumericUpDown^ nd20;
+	private: System::Windows::Forms::Label^ d20Label;
+	private: System::Windows::Forms::Button^ d20Roll;
+	private: System::Windows::Forms::Label^ d20Result;
+	private: System::Windows::Forms::NumericUpDown^ nd100;
+	private: System::Windows::Forms::Label^ d100Label;
+	private: System::Windows::Forms::Button^ d100Roll;
+	private: System::Windows::Forms::Label^ d100Result;
+	private: System::Windows::Forms::NumericUpDown^ ndX;
+	private: System::Windows::Forms::NumericUpDown^ dXValue;
+	private: System::Windows::Forms::Button^ dXRoll;
+	private: System::Windows::Forms::Label^ dXResult;
+
 	~application()
 	{
 		if (components)
@@ -161,6 +196,7 @@ namespace CppCLRWinformsProjekt {
 		void createSavingThrows(void);
 		void createSkills(void);
 		void createCombatTrackerElements(void);
+		void createDiceElements(void);
 
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);
