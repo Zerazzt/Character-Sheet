@@ -163,6 +163,7 @@
     <ClCompile Include="form body.cpp" />
     <ClCompile Include="intelligence functions.cpp" />
     <ClCompile Include="loading bar.cpp" />
+    <ClCompile Include="panel buttons.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

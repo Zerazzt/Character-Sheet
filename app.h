@@ -12,6 +12,7 @@ namespace CppCLRWinformsProjekt {
 			createSkills();
 			createCombatTrackerElements();
 			createDiceElements();
+			createPanelButtons();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -179,6 +180,12 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ dXResult;
 	private: System::Windows::Forms::TextBox^ diceResults;
 
+	// Panel button elements
+	private: System::Windows::Forms::Button^ equipmentButton;
+	private: System::Windows::Forms::Button^ featuresButton;
+	private: System::Windows::Forms::Button^ spellsButton;
+	private: System::Windows::Forms::Button^ notesButton;
+
 	~application()
 	{
 		if (components)
@@ -198,6 +205,7 @@ namespace CppCLRWinformsProjekt {
 		void createSkills(void);
 		void createCombatTrackerElements(void);
 		void createDiceElements(void);
+		void createPanelButtons(void);
 
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);

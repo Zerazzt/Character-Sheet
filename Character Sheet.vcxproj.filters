@@ -94,6 +94,9 @@
     <ClCompile Include="dice.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="panel buttons.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
