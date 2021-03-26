@@ -177,6 +177,7 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::NumericUpDown^ dXValue;
 	private: System::Windows::Forms::Button^ dXRoll;
 	private: System::Windows::Forms::Label^ dXResult;
+	private: System::Windows::Forms::TextBox^ diceResults;
 
 	~application()
 	{

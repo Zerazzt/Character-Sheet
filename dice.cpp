@@ -27,6 +27,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d4Roll->Text = L"Roll";
 	this->Controls->Add(this->d4Roll);
 
+	this->d4Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d4Result);
+	this->d4Result->Location = System::Drawing::Point(440, 215);
+	this->d4Result->Size = System::Drawing::Size(40, 20);
+	this->d4Result->Name = L"d4Result";
+	this->d4Result->Text = L"";
+	this->Controls->Add(this->d4Result);
+
 	this->nd6 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd6);
 	this->nd6->Location = System::Drawing::Point(300, 235);
@@ -50,6 +58,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d6Roll->Name = L"d6Roll";
 	this->d6Roll->Text = L"Roll";
 	this->Controls->Add(this->d6Roll);
+
+	this->d6Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d6Result);
+	this->d6Result->Location = System::Drawing::Point(440, 235);
+	this->d6Result->Size = System::Drawing::Size(40, 20);
+	this->d6Result->Name = L"d6Result";
+	this->d6Result->Text = L"";
+	this->Controls->Add(this->d6Result);
 
 	this->nd8 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd8);
@@ -75,6 +91,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d8Roll->Text = L"Roll";
 	this->Controls->Add(this->d8Roll);
 
+	this->d8Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d8Result);
+	this->d8Result->Location = System::Drawing::Point(440, 255);
+	this->d8Result->Size = System::Drawing::Size(40, 20);
+	this->d8Result->Name = L"d8Result";
+	this->d8Result->Text = L"";
+	this->Controls->Add(this->d8Result);
+
 	this->nd10 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd10);
 	this->nd10->Location = System::Drawing::Point(300, 275);
@@ -98,6 +122,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d10Roll->Name = L"d10Roll";
 	this->d10Roll->Text = L"Roll";
 	this->Controls->Add(this->d10Roll);
+
+	this->d10Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d10Result);
+	this->d10Result->Location = System::Drawing::Point(440, 275);
+	this->d10Result->Size = System::Drawing::Size(40, 20);
+	this->d10Result->Name = L"d10Result";
+	this->d10Result->Text = L"";
+	this->Controls->Add(this->d10Result);
 
 	this->nd12 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd12);
@@ -123,6 +155,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d12Roll->Text = L"Roll";
 	this->Controls->Add(this->d12Roll);
 
+	this->d12Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d12Result);
+	this->d12Result->Location = System::Drawing::Point(440, 295);
+	this->d12Result->Size = System::Drawing::Size(40, 20);
+	this->d12Result->Name = L"d12Result";
+	this->d12Result->Text = L"";
+	this->Controls->Add(this->d12Result);
+
 	this->nd20 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd20);
 	this->nd20->Location = System::Drawing::Point(300, 315);
@@ -146,6 +186,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d20Roll->Name = L"d20Roll";
 	this->d20Roll->Text = L"Roll";
 	this->Controls->Add(this->d20Roll);
+
+	this->d20Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d20Result);
+	this->d20Result->Location = System::Drawing::Point(440, 315);
+	this->d20Result->Size = System::Drawing::Size(40, 20);
+	this->d20Result->Name = L"d20Result";
+	this->d20Result->Text = L"";
+	this->Controls->Add(this->d20Result);
 
 	this->nd100 = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->nd100);
@@ -171,6 +219,14 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d100Roll->Text = L"Roll";
 	this->Controls->Add(this->d100Roll);
 
+	this->d100Result = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->d100Result);
+	this->d100Result->Location = System::Drawing::Point(440, 335);
+	this->d100Result->Size = System::Drawing::Size(40, 20);
+	this->d100Result->Name = L"d100Result";
+	this->d100Result->Text = L"";
+	this->Controls->Add(this->d100Result);
+
 	this->ndX = (gcnew System::Windows::Forms::NumericUpDown());
 	this->components->Add(this->ndX);
 	this->ndX->Location = System::Drawing::Point(300, 355);
@@ -192,4 +248,21 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->dXRoll->Name = L"dXRoll";
 	this->dXRoll->Text = L"Roll";
 	this->Controls->Add(this->dXRoll);
+
+	this->dXResult = (gcnew System::Windows::Forms::Label());
+	this->components->Add(this->dXResult);
+	this->dXResult->Location = System::Drawing::Point(440, 355);
+	this->dXResult->Size = System::Drawing::Size(40, 20);
+	this->dXResult->Name = L"dXResult";
+	this->dXResult->Text = L"";
+	this->Controls->Add(this->dXResult);
+
+	this->diceResults = (gcnew System::Windows::Forms::TextBox());
+	this->components->Add(this->diceResults);
+	this->diceResults->Multiline = true;
+	this->diceResults->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+	this->diceResults->Location = System::Drawing::Point(300, 400);
+	this->diceResults->Size = System::Drawing::Size(180, 180);
+	this->diceResults->Name = L"diceResults";
+	this->Controls->Add(this->diceResults);
 }
