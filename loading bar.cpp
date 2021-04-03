@@ -172,23 +172,23 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeRace->Text = L"Randomize Race";
 	this->Controls->Add(this->RandomizeRace);
 
-	this->Save = (gcnew System::Windows::Forms::Button());
-	this->components->Add(Save);
-	this->Save->FlatStyle = System::Windows::Forms::FlatStyle::System;
-	this->Save->Location = System::Drawing::Point(1145, 5);
-	this->Save->Size = System::Drawing::Size(100, 20);
-	this->Save->Name = L"Save";
-	this->Save->Text = L"Save";
-	this->Save->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::saveCharacter);
-	this->Controls->Add(this->Save);
+	this->SaveButton = (gcnew System::Windows::Forms::Button());
+	this->components->Add(SaveButton);
+	this->SaveButton->FlatStyle = System::Windows::Forms::FlatStyle::System;
+	this->SaveButton->Location = System::Drawing::Point(1145, 5);
+	this->SaveButton->Size = System::Drawing::Size(100, 20);
+	this->SaveButton->Name = L"Save";
+	this->SaveButton->Text = L"Save";
+	this->SaveButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::saveCharacter);
+	this->Controls->Add(this->SaveButton);
 
-	this->Load = (gcnew System::Windows::Forms::Button());
-	this->components->Add(Load);
-	this->Load->FlatStyle = System::Windows::Forms::FlatStyle::System;
-	this->Load->Location = System::Drawing::Point(1145, 30);
-	this->Load->Size = System::Drawing::Size(100, 20);
-	this->Load->Name = L"Load";
-	this->Load->Text = L"Load";
-	this->Load->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::loadCharacter);
-	this->Controls->Add(this->Load);
+	this->LoadButton = (gcnew System::Windows::Forms::Button());
+	this->components->Add(LoadButton);
+	this->LoadButton->FlatStyle = System::Windows::Forms::FlatStyle::System;
+	this->LoadButton->Location = System::Drawing::Point(1145, 30);
+	this->LoadButton->Size = System::Drawing::Size(100, 20);
+	this->LoadButton->Name = L"Load";
+	this->LoadButton->Text = L"Load";
+	this->LoadButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::loadCharacter);
+	this->Controls->Add(this->LoadButton);
 }

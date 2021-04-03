@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 namespace CppCLRWinformsProjekt {
 	public ref class application : public System::Windows::Forms::Form
 	{
@@ -13,6 +14,10 @@ namespace CppCLRWinformsProjekt {
 			createCombatTrackerElements();
 			createDiceElements();
 			createPanelButtons();
+			createEquipmentPanel();
+			createFeaturesPanel();
+			createSpellsPanel();
+			createNotesPanel();
 		}
 	// Loading bar elements
 	private: System::Windows::Forms::Label^ NameLabel;
@@ -35,8 +40,8 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Button^ RandomizeClass;
 	private: System::Windows::Forms::Button^ RandomizeBackground;
 	private: System::Windows::Forms::Button^ RandomizeRace;
-	private: System::Windows::Forms::Button^ Save;
-	private: System::Windows::Forms::Button^ Load;
+	private: System::Windows::Forms::Button^ SaveButton;
+	private: System::Windows::Forms::Button^ LoadButton;
 
 	// Ability score elements
 	private: System::Windows::Forms::Label^ StrengthLabel;
@@ -181,10 +186,82 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::TextBox^ diceResults;
 
 	// Panel button elements
+	private: System::Windows::Forms::Button^ noneButton;
 	private: System::Windows::Forms::Button^ equipmentButton;
 	private: System::Windows::Forms::Button^ featuresButton;
 	private: System::Windows::Forms::Button^ spellsButton;
 	private: System::Windows::Forms::Button^ notesButton;
+
+	// Panels
+	private: System::Windows::Forms::Panel^ equipmentPanel;
+	private: System::Windows::Forms::Panel^ featuresPanel;
+	private: System::Windows::Forms::Panel^ spellsPanel;
+	private: System::Windows::Forms::Panel^ notesPanel;
+
+	// Equipment panel elements
+	private: System::Windows::Forms::Label^ CPLabel;
+	private: System::Windows::Forms::NumericUpDown^ CP;
+	private: System::Windows::Forms::Label^ SPLabel;
+	private: System::Windows::Forms::NumericUpDown^ SP;
+	private: System::Windows::Forms::Label^ EPLabel;
+	private: System::Windows::Forms::NumericUpDown^ EP;
+	private: System::Windows::Forms::Label^ GPLabel;
+	private: System::Windows::Forms::NumericUpDown^ GP;
+	private: System::Windows::Forms::Label^ PPLabel;
+	private: System::Windows::Forms::NumericUpDown^ PP;
+	private: System::Windows::Forms::TextBox^ gems;
+	private: System::Windows::Forms::TextBox^ weapons;
+	private: System::Windows::Forms::TextBox^ misc;
+
+	// Features panel elements
+	private: System::Windows::Forms::TextBox^ backgroundFeatures;
+	private: System::Windows::Forms::TextBox^ raceFeatures;
+	private: System::Windows::Forms::TextBox^ classFeatures;
+	private: System::Windows::Forms::TextBox^ otherFeatures;
+
+	// Spells panel elements
+	private: System::Windows::Forms::Label^ SpellSaveLabel;
+	private: System::Windows::Forms::NumericUpDown^ spellSaveDC;
+	private: System::Windows::Forms::Label^ SpellAttackLabel;
+	private: System::Windows::Forms::NumericUpDown^ spellAttackModifier;
+	private: System::Windows::Forms::Label^ SpellLevelLabel;
+	private: System::Windows::Forms::Label^ Level1Label;
+	private: System::Windows::Forms::Label^ Level2Label;
+	private: System::Windows::Forms::Label^ Level3Label;
+	private: System::Windows::Forms::Label^ Level4Label;
+	private: System::Windows::Forms::Label^ Level5Label;
+	private: System::Windows::Forms::Label^ Level6Label;
+	private: System::Windows::Forms::Label^ Level7Label;
+	private: System::Windows::Forms::Label^ Level8Label;
+	private: System::Windows::Forms::Label^ Level9Label;
+	private: System::Windows::Forms::Label^ TotalSlotsLabel;
+	private: System::Windows::Forms::NumericUpDown^ level1TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level2TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level3TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level4TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level5TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level6TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level7TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level8TotalSlots;
+	private: System::Windows::Forms::NumericUpDown^ level9TotalSlots;
+	private: System::Windows::Forms::Label^ UsedSlotsLabel;
+	private: System::Windows::Forms::NumericUpDown^ level1UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level2UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level3UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level4UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level5UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level6UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level7UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level8UsedSlots;
+	private: System::Windows::Forms::NumericUpDown^ level9UsedSlots;
+	private: System::Windows::Forms::TextBox^ cantripsKnown;
+	private: System::Windows::Forms::TextBox^ spellsKnown;
+	private: System::Windows::Forms::TextBox^ spellComponents;
+
+	// Notes panel elements
+	private: System::Windows::Forms::TextBox^ notes1;
+	private: System::Windows::Forms::TextBox^ notes2;
+	private: System::Windows::Forms::TextBox^ notes3;
 
 	~application()
 	{
@@ -198,6 +275,7 @@ namespace CppCLRWinformsProjekt {
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
+		void onFormLoad(System::Object^ send, System::EventArgs^ e);
 		void InitializeFormBody(void);
 		void createLoadBar(void);
 		void createAbilityScores(void);
@@ -206,6 +284,10 @@ namespace CppCLRWinformsProjekt {
 		void createCombatTrackerElements(void);
 		void createDiceElements(void);
 		void createPanelButtons(void);
+		void createEquipmentPanel(void);
+		void createFeaturesPanel(void);
+		void createSpellsPanel(void);
+		void createNotesPanel(void);
 
 		void setBackground(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);
@@ -225,6 +307,23 @@ namespace CppCLRWinformsProjekt {
 		void updateWisdom(System::Object^ send, System::EventArgs^ e);
 		void updateCharisma(System::Object^ send, System::EventArgs^ e);
 		void generateAbilityScores(System::Object^ send, System::EventArgs^ e);
+		void setPanelNone(System::Object^ send, System::EventArgs^ e);
+		void setPanelEquipment(System::Object^ send, System::EventArgs^ e);
+		void setPanelFeatures(System::Object^ send, System::EventArgs^ e);
+		void setPanelSpells(System::Object^ send, System::EventArgs^ e);
+		void setPanelNotes(System::Object^ send, System::EventArgs^ e);
 #pragma endregion
+		std::string systostr(System::String^ s)
+		{
+			const char* chars = (const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(s)).ToPointer();
+			std::string os = chars;
+			System::Runtime::InteropServices::Marshal::FreeHGlobal(System::IntPtr((void*)chars));
+			return os;
+		}
+
+		System::String^ strtosys(std::string s)
+		{
+			return gcnew System::String(s.c_str());
+		}
 	};
 }

@@ -13,4 +13,10 @@ void CppCLRWinformsProjekt::application::InitializeFormBody(void)
 	this->MinimumSize = System::Drawing::Size(1266, 639);
 	this->SizeGripStyle = System::Windows::Forms::SizeGripStyle::Hide;
 	this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+	this->Load += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::onFormLoad);
+}
+
+void CppCLRWinformsProjekt::application::onFormLoad(System::Object^ send, System::EventArgs^ e)
+{
+
 }

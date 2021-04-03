@@ -262,7 +262,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->diceResults->Multiline = true;
 	this->diceResults->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 	this->diceResults->Location = System::Drawing::Point(300, 400);
-	this->diceResults->Size = System::Drawing::Size(180, 180);
+	this->diceResults->Size = System::Drawing::Size(180, 194);
 	this->diceResults->Name = L"diceResults";
 	this->Controls->Add(this->diceResults);
 }
