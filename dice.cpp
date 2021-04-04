@@ -8,6 +8,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd4->Location = System::Drawing::Point(300, 215);
 	this->nd4->Size = System::Drawing::Size(40, 20);
 	this->nd4->Name = L"nd4";
+	this->nd4->Value = 1;
 	this->Controls->Add(this->nd4);
 
 	this->d4Label = (gcnew System::Windows::Forms::Label());
@@ -25,6 +26,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d4Roll->Size = System::Drawing::Size(55, 20);
 	this->d4Roll->Name = L"d4Roll";
 	this->d4Roll->Text = L"Roll";
+	this->d4Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld4);
 	this->Controls->Add(this->d4Roll);
 
 	this->d4Result = (gcnew System::Windows::Forms::Label());
@@ -40,6 +42,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd6->Location = System::Drawing::Point(300, 235);
 	this->nd6->Size = System::Drawing::Size(40, 20);
 	this->nd6->Name = L"nd6";
+	this->nd6->Value = 1;
 	this->Controls->Add(this->nd6);
 
 	this->d6Label = (gcnew System::Windows::Forms::Label());
@@ -57,6 +60,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d6Roll->Size = System::Drawing::Size(55, 20);
 	this->d6Roll->Name = L"d6Roll";
 	this->d6Roll->Text = L"Roll";
+	this->d6Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld6);
 	this->Controls->Add(this->d6Roll);
 
 	this->d6Result = (gcnew System::Windows::Forms::Label());
@@ -72,6 +76,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd8->Location = System::Drawing::Point(300, 255);
 	this->nd8->Size = System::Drawing::Size(40, 20);
 	this->nd8->Name = L"nd8";
+	this->nd8->Value = 1;
 	this->Controls->Add(this->nd8);
 
 	this->d8Label = (gcnew System::Windows::Forms::Label());
@@ -89,6 +94,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d8Roll->Size = System::Drawing::Size(55, 20);
 	this->d8Roll->Name = L"d8Roll";
 	this->d8Roll->Text = L"Roll";
+	this->d8Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld8);
 	this->Controls->Add(this->d8Roll);
 
 	this->d8Result = (gcnew System::Windows::Forms::Label());
@@ -104,6 +110,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd10->Location = System::Drawing::Point(300, 275);
 	this->nd10->Size = System::Drawing::Size(40, 20);
 	this->nd10->Name = L"nd10";
+	this->nd10->Value = 1;
 	this->Controls->Add(this->nd10);
 
 	this->d10Label = (gcnew System::Windows::Forms::Label());
@@ -121,6 +128,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d10Roll->Size = System::Drawing::Size(55, 20);
 	this->d10Roll->Name = L"d10Roll";
 	this->d10Roll->Text = L"Roll";
+	this->d10Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld10);
 	this->Controls->Add(this->d10Roll);
 
 	this->d10Result = (gcnew System::Windows::Forms::Label());
@@ -136,6 +144,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd12->Location = System::Drawing::Point(300, 295);
 	this->nd12->Size = System::Drawing::Size(40, 20);
 	this->nd12->Name = L"nd12";
+	this->nd12->Value = 1;
 	this->Controls->Add(this->nd12);
 
 	this->d12Label = (gcnew System::Windows::Forms::Label());
@@ -153,6 +162,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d12Roll->Size = System::Drawing::Size(55, 20);
 	this->d12Roll->Name = L"d12Roll";
 	this->d12Roll->Text = L"Roll";
+	this->d12Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld12);
 	this->Controls->Add(this->d12Roll);
 
 	this->d12Result = (gcnew System::Windows::Forms::Label());
@@ -168,6 +178,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd20->Location = System::Drawing::Point(300, 315);
 	this->nd20->Size = System::Drawing::Size(40, 20);
 	this->nd20->Name = L"nd20";
+	this->nd20->Value = 1;
 	this->Controls->Add(this->nd20);
 
 	this->d20Label = (gcnew System::Windows::Forms::Label());
@@ -185,6 +196,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d20Roll->Size = System::Drawing::Size(55, 20);
 	this->d20Roll->Name = L"d20Roll";
 	this->d20Roll->Text = L"Roll";
+	this->d20Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld20);
 	this->Controls->Add(this->d20Roll);
 
 	this->d20Result = (gcnew System::Windows::Forms::Label());
@@ -200,6 +212,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->nd100->Location = System::Drawing::Point(300, 335);
 	this->nd100->Size = System::Drawing::Size(40, 20);
 	this->nd100->Name = L"nd100";
+	this->nd100->Value = 1;
 	this->Controls->Add(this->nd100);
 
 	this->d100Label = (gcnew System::Windows::Forms::Label());
@@ -217,6 +230,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->d100Roll->Size = System::Drawing::Size(55, 20);
 	this->d100Roll->Name = L"d100Roll";
 	this->d100Roll->Text = L"Roll";
+	this->d100Roll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolld100);
 	this->Controls->Add(this->d100Roll);
 
 	this->d100Result = (gcnew System::Windows::Forms::Label());
@@ -247,6 +261,7 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->dXRoll->Size = System::Drawing::Size(55, 20);
 	this->dXRoll->Name = L"dXRoll";
 	this->dXRoll->Text = L"Roll";
+	this->dXRoll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::rolldX);
 	this->Controls->Add(this->dXRoll);
 
 	this->dXResult = (gcnew System::Windows::Forms::Label());
@@ -255,7 +270,17 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->dXResult->Size = System::Drawing::Size(40, 20);
 	this->dXResult->Name = L"dXResult";
 	this->dXResult->Text = L"";
+	this->ndX->Value = 1;
 	this->Controls->Add(this->dXResult);
+
+	this->clearButton = (gcnew System::Windows::Forms::Button());
+	this->components->Add(this->dXResult);
+	this->clearButton->Location = System::Drawing::Point(300, 375);
+	this->clearButton->Size = System::Drawing::Size(180, 20);
+	this->clearButton->Name = L"clearButton";
+	this->clearButton->Text = L"Clear";
+	this->clearButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::clear);
+	this->Controls->Add(this->clearButton);
 
 	this->diceResults = (gcnew System::Windows::Forms::TextBox());
 	this->components->Add(this->diceResults);
@@ -265,4 +290,17 @@ void CppCLRWinformsProjekt::application::createDiceElements(void)
 	this->diceResults->Size = System::Drawing::Size(180, 194);
 	this->diceResults->Name = L"diceResults";
 	this->Controls->Add(this->diceResults);
+}
+
+void CppCLRWinformsProjekt::application::clear(System::Object^ send, System::EventArgs^ e)
+{
+	this->d4Result->Text = L"";
+	this->d6Result->Text = L"";
+	this->d8Result->Text = L"";
+	this->d10Result->Text = L"";
+	this->d12Result->Text = L"";
+	this->d20Result->Text = L"";
+	this->d100Result->Text = L"";
+	this->dXResult->Text = L"";
+	this->diceResults->Text = L"";
 }

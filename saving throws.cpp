@@ -16,7 +16,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->components->Add(this->probonValue);
 	this->probonValue->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 	this->probonValue->Location = System::Drawing::Point(205, 75);
-	this->probonValue->Size = System::Drawing::Size(10.F, 20);
+	this->probonValue->Size = System::Drawing::Size(10, 20);
 	this->probonValue->Name = L"probonValue";
 	this->probonValue->Text = L"0";
 	this->Controls->Add(this->probonValue);

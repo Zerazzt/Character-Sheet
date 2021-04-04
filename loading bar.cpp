@@ -32,6 +32,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charLevel->Location = System::Drawing::Point(60, 30);
 	this->charLevel->Name = L"level";
 	this->charLevel->Size = System::Drawing::Size(120, 20);
+	this->charLevel->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setLevel);
 	this->Controls->Add(this->charLevel);
 
 	this->BackgroundLabel = (gcnew System::Windows::Forms::Label());
@@ -81,8 +82,9 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charClass->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 	this->charClass->FormattingEnabled = true;
 	this->charClass->Location = System::Drawing::Point(470, 5);
-	this->charClass->Name = L"classSelection";
+	this->charClass->Name = L"charClass";
 	this->charClass->Size = System::Drawing::Size(120, 21);
+	this->charClass->SelectedIndexChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setClass);
 	this->Controls->Add(this->charClass);
 
 	this->SubclassLabel = (gcnew System::Windows::Forms::Label());
@@ -98,7 +100,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charSubclass->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 	this->charSubclass->FormattingEnabled = true;
 	this->charSubclass->Location = System::Drawing::Point(470, 30);
-	this->charSubclass->Name = L"subclassSelection";
+	this->charSubclass->Name = L"charSubclass";
 	this->charSubclass->Size = System::Drawing::Size(120, 21);
 	this->Controls->Add(this->charSubclass);
 	
@@ -115,8 +117,9 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charRace->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 	this->charRace->FormattingEnabled = true;
 	this->charRace->Location = System::Drawing::Point(660, 5);
-	this->charRace->Name = L"raceSelection";
+	this->charRace->Name = L"charRace";
 	this->charRace->Size = System::Drawing::Size(120, 21);
+	this->charRace->SelectedIndexChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setRace);
 	this->Controls->Add(this->charRace);
 
 	this->SubraceLabel = (gcnew System::Windows::Forms::Label());
@@ -132,7 +135,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charSubrace->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 	this->charSubrace->FormattingEnabled = true;
 	this->charSubrace->Location = System::Drawing::Point(660, 30);
-	this->charSubrace->Name = L"subraceSelection";
+	this->charSubrace->Name = L"charSubrace";
 	this->charSubrace->Size = System::Drawing::Size(120, 21);
 	this->Controls->Add(this->charSubrace);
 
@@ -143,6 +146,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeAll->Size = System::Drawing::Size(150, 20);
 	this->RandomizeAll->Name = L"RandomizeAll";
 	this->RandomizeAll->Text = L"Randomize All";
+	this->RandomizeAll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeAll);
 	this->Controls->Add(this->RandomizeAll);
 
 	this->RandomizeBackground = (gcnew System::Windows::Forms::Button());
@@ -152,6 +156,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeBackground->Size = System::Drawing::Size(150, 20);
 	this->RandomizeBackground->Name = L"RandomizeBackground";
 	this->RandomizeBackground->Text = L"Randomize Background";
+	this->RandomizeBackground->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeBackground);
 	this->Controls->Add(this->RandomizeBackground);
 
 	this->RandomizeClass = (gcnew System::Windows::Forms::Button());
@@ -161,6 +166,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeClass->Size = System::Drawing::Size(150, 20);
 	this->RandomizeClass->Name = L"RandomizeClass";
 	this->RandomizeClass->Text = L"Randomize Class";
+	this->RandomizeClass->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeClass);
 	this->Controls->Add(this->RandomizeClass);
 
 	this->RandomizeRace = (gcnew System::Windows::Forms::Button());
@@ -170,6 +176,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeRace->Size = System::Drawing::Size(150, 20);
 	this->RandomizeRace->Name = L"RandomizeRace";
 	this->RandomizeRace->Text = L"Randomize Race";
+	this->RandomizeRace->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeRace);
 	this->Controls->Add(this->RandomizeRace);
 
 	this->SaveButton = (gcnew System::Windows::Forms::Button());

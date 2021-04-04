@@ -3,5 +3,92 @@
 
 void CppCLRWinformsProjekt::application::updateCharisma(System::Object^ send, System::EventArgs^ e)
 {
-
+	int charismaScore = (int)charCharisma->Value;
+	int mod = (charismaScore - (charismaScore % 2) - 10) / 2;
+	int pro = stoi(systostr(this->probonValue->Text));
+	this->strMod->Text = this->strtosys(std::to_string(mod));
+	if (chaST->Checked)
+	{
+		chaST->Text = strtosys(std::to_string(mod + pro));
+	}
+	else
+	{
+		chaST->Text = strtosys(std::to_string(mod));
+	}
+	if (deceptionPro->Checked)
+	{
+		if (deceptionExp->Checked)
+		{
+			deceptionExp->Text = strtosys(std::to_string(mod + pro + pro));
+		}
+		else
+		{
+			deceptionExp->Text = strtosys(std::to_string(mod + pro));
+		}
+	}
+	else
+	{
+		if (deceptionExp->Checked)
+		{
+			deceptionExp->Checked = false;
+		}
+		deceptionExp->Text = strtosys(std::to_string(mod));
+	}
+	if (intimidationPro->Checked)
+	{
+		if (intimidationExp->Checked)
+		{
+			intimidationExp->Text = strtosys(std::to_string(mod + pro + pro));
+		}
+		else
+		{
+			intimidationExp->Text = strtosys(std::to_string(mod + pro));
+		}
+	}
+	else
+	{
+		if (intimidationExp->Checked)
+		{
+			intimidationExp->Checked = false;
+		}
+		intimidationExp->Text = strtosys(std::to_string(mod));
+	}
+	if (performancePro->Checked)
+	{
+		if (performanceExp->Checked)
+		{
+			performanceExp->Text = strtosys(std::to_string(mod + pro + pro));
+		}
+		else
+		{
+			performanceExp->Text = strtosys(std::to_string(mod + pro));
+		}
+	}
+	else
+	{
+		if (performanceExp->Checked)
+		{
+			performanceExp->Checked = false;
+		}
+		performanceExp->Text = strtosys(std::to_string(mod));
+	}
+	if (persuasionPro->Checked)
+	{
+		if (persuasionExp->Checked)
+		{
+			persuasionExp->Text = strtosys(std::to_string(mod + pro + pro));
+		}
+		else
+		{
+			persuasionExp->Text = strtosys(std::to_string(mod + pro));
+		}
+	}
+	else
+	{
+		if (persuasionExp->Checked)
+		{
+			persuasionExp->Checked = false;
+		}
+		persuasionExp->Text = strtosys(std::to_string(mod));
+	}
 }

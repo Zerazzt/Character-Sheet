@@ -1,0 +1,11 @@
+Dhampir
+Dragonborn
+Dwarf
+Elf
+Gnome
+Halfling
+Half-Elf
+Half-Orc
+Human
+Tabaxi
+Tiefling

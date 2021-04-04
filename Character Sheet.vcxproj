@@ -146,13 +146,13 @@
     <ClInclude Include="app.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="json.hpp" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ability scores.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="background.cpp" />
     <ClCompile Include="charisma functions.cpp" />
     <ClCompile Include="class.cpp" />
     <ClCompile Include="combat trackers.cpp" />
@@ -173,6 +173,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="proficiency.cpp" />
     <ClCompile Include="race.cpp" />
     <ClCompile Include="randomize.cpp" />
     <ClCompile Include="saveload.cpp" />

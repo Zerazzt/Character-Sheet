@@ -1,0 +1,10 @@
+Abjuration
+Bladesinging
+Conjuration
+Divination
+Enchantment
+Evocation
+Illusion
+Necromancy
+Transmutation
+War Magic
