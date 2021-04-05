@@ -47,6 +47,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->dexST->Size = System::Drawing::Size(40, 20);
 	this->dexST->Name = L"dexST";
 	this->dexST->Text = L"-5";
+	this->dexST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
 	this->Controls->Add(this->dexST);
 
 	this->dexSTLabel = (gcnew System::Windows::Forms::Label());
@@ -65,6 +66,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->conST->Size = System::Drawing::Size(40, 20);
 	this->conST->Name = L"conST";
 	this->conST->Text = L"-5";
+	this->conST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateConstitution);
 	this->Controls->Add(this->conST);
 
 	this->conSTLabel = (gcnew System::Windows::Forms::Label());
@@ -83,6 +85,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->intST->Size = System::Drawing::Size(40, 20);
 	this->intST->Name = L"intST";
 	this->intST->Text = L"-5";
+	this->intST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
 	this->Controls->Add(this->intST);
 
 	this->intSTLabel = (gcnew System::Windows::Forms::Label());
@@ -101,6 +104,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->wisST->Size = System::Drawing::Size(40, 20);
 	this->wisST->Name = L"wisST";
 	this->wisST->Text = L"-5";
+	this->wisST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
 	this->Controls->Add(this->wisST);
 
 	this->wisSTLabel = (gcnew System::Windows::Forms::Label());
@@ -119,6 +123,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->chaST->Size = System::Drawing::Size(40, 20);
 	this->chaST->Name = L"chaST";
 	this->chaST->Text = L"-5";
+	this->chaST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
 	this->Controls->Add(this->chaST);
 
 	this->chaSTLabel = (gcnew System::Windows::Forms::Label());
