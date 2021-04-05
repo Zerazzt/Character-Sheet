@@ -103,6 +103,58 @@ void CppCLRWinformsProjekt::application::saveCharacter(System::Object^ send, Sys
 				{"survivalPro", this->survivalPro->Checked},
 				{"survivalExp", this->survivalExp->Checked}
 			}}
+		}},
+		{"hitPointMaximum", (int)this->hitPointMaximum->Value},
+		{"currentHitPoints", (int)this->currentHitPoints->Value},
+		{"temporaryHitPoints", (int)this->temporaryHitPoints->Value},
+		{"armourClass", (int)this->armourClass->Value},
+		{"initiativeModifier", (int)this->initiativeModifier->Value},
+		{"movementSpeed", (int)this->movementSpeed->Value},
+		{"equipment", {
+			{"CP", (int)this->CP->Value},
+			{"SP", (int)this->SP->Value},
+			{"EP", (int)this->EP->Value},
+			{"GP", (int)this->GP->Value},
+			{"PP", (int)this->PP->Value},
+			{"gems", systostr(this->gems->Text)},
+			{"weapons", systostr(this->weapons->Text)},
+			{"misc", systostr(this->misc->Text)}
+		}},
+		{"features", {
+			{"backgroundFeatures", systostr(this->backgroundFeatures->Text)},
+			{"raceFeatures", systostr(this->raceFeatures->Text)},
+			{"classFeatures", systostr(this->classFeatures->Text)},
+			{"otherFeatures", systostr(this->otherFeatures->Text)}
+		}},
+		{"spells", {
+			{"spellSaveDC", (int)this->spellSaveDC->Value},
+			{"spellAttackModifier", (int)this->spellAttackModifier->Value},
+			{"level1TotalSlots", (int)this->level1TotalSlots->Value},
+			{"level2TotalSlots", (int)this->level2TotalSlots->Value},
+			{"level3TotalSlots", (int)this->level3TotalSlots->Value},
+			{"level4TotalSlots", (int)this->level4TotalSlots->Value},
+			{"level5TotalSlots", (int)this->level5TotalSlots->Value},
+			{"level6TotalSlots", (int)this->level6TotalSlots->Value},
+			{"level7TotalSlots", (int)this->level7TotalSlots->Value},
+			{"level8TotalSlots", (int)this->level8TotalSlots->Value},
+			{"level9TotalSlots", (int)this->level9TotalSlots->Value},
+			{"level1UsedSlots", (int)this->level1UsedSlots->Value},
+			{"level2UsedSlots", (int)this->level2UsedSlots->Value},
+			{"level3UsedSlots", (int)this->level3UsedSlots->Value},
+			{"level4UsedSlots", (int)this->level4UsedSlots->Value},
+			{"level5UsedSlots", (int)this->level5UsedSlots->Value},
+			{"level6UsedSlots", (int)this->level6UsedSlots->Value},
+			{"level7UsedSlots", (int)this->level7UsedSlots->Value},
+			{"level8UsedSlots", (int)this->level8UsedSlots->Value},
+			{"level9UsedSlots", (int)this->level9UsedSlots->Value},
+			{"cantripsKnown", systostr(this->cantripsKnown->Text)},
+			{"spellsKnown", systostr(this->spellsKnown->Text)},
+			{"spellComponents", systostr(this->spellComponents->Text)}
+		}},
+		{"notes", {
+			{"notes1", systostr(this->notes1->Text)},
+			{"notes2", systostr(this->notes2->Text)},
+			{"notes3", systostr(this->notes3->Text)}
 		}}
 	};
 	std::ofstream o("Data/Output/" + systostr(this->charName->Text) + ".json");
@@ -171,4 +223,48 @@ void CppCLRWinformsProjekt::application::loadCharacter(System::Object^ send, Sys
 	this->stealthExp->Checked = character["skills"]["stealth"]["stealthExp"];
 	this->survivalPro->Checked = character["skills"]["survival"]["survivalPro"];
 	this->survivalExp->Checked = character["skills"]["survival"]["survivalExp"];
+	this->hitPointMaximum->Value = (int)character["hitPointMaximum"];
+	this->currentHitPoints->Value = (int)character["currentHitPoints"];
+	this->temporaryHitPoints->Value = (int)character["temporaryHitPoints"];
+	this->armourClass->Value = (int)character["armourClass"];
+	this->initiativeModifier->Value = (int)character["initiativeModifier"];
+	this->movementSpeed->Value = (int)character["movementSpeed"];
+	this->CP->Value = (int)character["equipment"]["CP"];
+	this->SP->Value = (int)character["equipment"]["SP"];
+	this->EP->Value = (int)character["equipment"]["EP"];
+	this->GP->Value = (int)character["equipment"]["GP"];
+	this->PP->Value = (int)character["equipment"]["PP"];
+	this->gems->Text = strtosys(character["equipment"]["gems"]);
+	this->weapons->Text = strtosys(character["equipment"]["weapons"]);
+	this->misc->Text = strtosys(character["equipment"]["misc"]);
+	this->backgroundFeatures->Text = strtosys(character["features"]["backgroundFeatures"]);
+	this->raceFeatures->Text = strtosys(character["features"]["raceFeatures"]);
+	this->classFeatures->Text = strtosys(character["features"]["classFeatures"]);
+	this->otherFeatures->Text = strtosys(character["features"]["otherFeatures"]);
+	this->spellSaveDC->Value = (int)character["spells"]["spellSaveDC"];
+	this->spellAttackModifier->Value = (int)character["spells"]["spellAttackModifier"];
+	this->level1TotalSlots->Value = (int)character["spells"]["level1TotalSlots"];
+	this->level2TotalSlots->Value = (int)character["spells"]["level2TotalSlots"];
+	this->level3TotalSlots->Value = (int)character["spells"]["level3TotalSlots"];
+	this->level4TotalSlots->Value = (int)character["spells"]["level4TotalSlots"];
+	this->level5TotalSlots->Value = (int)character["spells"]["level5TotalSlots"];
+	this->level6TotalSlots->Value = (int)character["spells"]["level6TotalSlots"];
+	this->level7TotalSlots->Value = (int)character["spells"]["level7TotalSlots"];
+	this->level8TotalSlots->Value = (int)character["spells"]["level8TotalSlots"];
+	this->level9TotalSlots->Value = (int)character["spells"]["level9TotalSlots"];
+	this->level1UsedSlots->Value = (int)character["spells"]["level1UsedSlots"];
+	this->level2UsedSlots->Value = (int)character["spells"]["level2UsedSlots"];
+	this->level3UsedSlots->Value = (int)character["spells"]["level3UsedSlots"];
+	this->level4UsedSlots->Value = (int)character["spells"]["level4UsedSlots"];
+	this->level5UsedSlots->Value = (int)character["spells"]["level5UsedSlots"];
+	this->level6UsedSlots->Value = (int)character["spells"]["level6UsedSlots"];
+	this->level7UsedSlots->Value = (int)character["spells"]["level7UsedSlots"];
+	this->level8UsedSlots->Value = (int)character["spells"]["level8UsedSlots"];
+	this->level9UsedSlots->Value = (int)character["spells"]["level9UsedSlots"];
+	this->cantripsKnown->Text = strtosys(character["spells"]["cantripsKnown"]);
+	this->spellsKnown->Text = strtosys(character["spells"]["spellsKnown"]);
+	this->spellComponents->Text = strtosys(character["spells"]["spellComponents"]);
+	this->notes1->Text = strtosys(character["notes"]["notes1"]);
+	this->notes2->Text = strtosys(character["notes"]["notes2"]);
+	this->notes3->Text = strtosys(character["notes"]["notes3"]);
 }
