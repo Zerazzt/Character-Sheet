@@ -14,12 +14,22 @@ void CppCLRWinformsProjekt::application::saveCharacter(System::Object^ send, Sys
 		{"charSubclass", systostr(this->charSubclass->Text)},
 		{"charRace", systostr(this->charRace->Text)},
 		{"charSubrace", systostr(this->charSubrace->Text)},
-		{"charStrength", (int)this->charStrength->Value},
-		{"charDexterity", (int)this->charDexterity->Value},
-		{"charConstitution", (int)this->charConstitution->Value},
-		{"charIntelligence", (int)this->charIntelligence->Value},
-		{"charWisdom", (int)this->charWisdom->Value},
-		{"charCharisma", (int)this->charCharisma->Value}
+		{"abilityScores", {
+			{"charStrength", (int)this->charStrength->Value},
+			{"charDexterity", (int)this->charDexterity->Value},
+			{"charConstitution", (int)this->charConstitution->Value},
+			{"charIntelligence", (int)this->charIntelligence->Value},
+			{"charWisdom", (int)this->charWisdom->Value},
+			{"charCharisma", (int)this->charCharisma->Value}
+		}},
+		{"savingThrows",{
+			{"strST", this->strST->Checked},
+			{"dexST", this->dexST->Checked},
+			{"conST", this->conST->Checked},
+			{"intST", this->intST->Checked},
+			{"wisST", this->wisST->Checked},
+			{"chaST", this->chaST->Checked}
+		}}
 	};
 	std::ofstream o("Data/Output/" + systostr(this->charName->Text) + ".json");
 	o << std::setw(4) << character << std::endl;
@@ -39,10 +49,16 @@ void CppCLRWinformsProjekt::application::loadCharacter(System::Object^ send, Sys
 	this->charSubclass->SelectedIndex = this->charSubclass->Items->IndexOf(strtosys(character["charSubclass"]));
 	this->charRace->SelectedIndex = this->charRace->Items->IndexOf(strtosys(character["charRace"]));
 	this->charSubrace->SelectedIndex = this->charSubrace->Items->IndexOf(strtosys(character["charSubrace"]));
-	this->charStrength->Value = (int)character["charStrength"];
-	this->charDexterity->Value = (int)character["charDexterity"];
-	this->charConstitution->Value = (int)character["charConstitution"];
-	this->charIntelligence->Value = (int)character["charIntelligence"];
-	this->charWisdom->Value = (int)character["charWisdom"];
-	this->charCharisma->Value = (int)character["charCharisma"];
+	this->charStrength->Value = (int)character["abilityScores"]["charStrength"];
+	this->charDexterity->Value = (int)character["abilityScores"]["charDexterity"];
+	this->charConstitution->Value = (int)character["abilityScores"]["charConstitution"];
+	this->charIntelligence->Value = (int)character["abilityScores"]["charIntelligence"];
+	this->charWisdom->Value = (int)character["abilityScores"]["charWisdom"];
+	this->charCharisma->Value = (int)character["abilityScores"]["charCharisma"];
+	this->strST->Checked = character["savingThrows"]["strST"];
+	this->dexST->Checked = character["savingThrows"]["dexST"];
+	this->conST->Checked = character["savingThrows"]["conST"];
+	this->intST->Checked = character["savingThrows"]["intST"];
+	this->wisST->Checked = character["savingThrows"]["wisST"];
+	this->chaST->Checked = character["savingThrows"]["chaST"];
 }
