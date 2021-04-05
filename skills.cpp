@@ -14,7 +14,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->acrobaticsExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->acrobaticsExp);
 	this->acrobaticsExp->Location = System::Drawing::Point(110, 215);
-	this->acrobaticsExp->Size = System::Drawing::Size(35, 20);
+	this->acrobaticsExp->Size = System::Drawing::Size(40, 20);
 	this->acrobaticsExp->Name = L"acrobaticsExp";
 	this->acrobaticsExp->Text = L"-5";
 	this->acrobaticsExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
@@ -23,7 +23,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->acrobaticsLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->acrobaticsLabel);
 	this->acrobaticsLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->acrobaticsLabel->Location = System::Drawing::Point(145, 215);
+	this->acrobaticsLabel->Location = System::Drawing::Point(150, 215);
 	this->acrobaticsLabel->Size = System::Drawing::Size(120, 20);
 	this->acrobaticsLabel->Name = L"acrobaticsLabel";
 	this->acrobaticsLabel->Text = L"Acrobatics (Dex)";
@@ -40,7 +40,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->animalhandlingExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->animalhandlingExp);
 	this->animalhandlingExp->Location = System::Drawing::Point(110, 235);
-	this->animalhandlingExp->Size = System::Drawing::Size(35, 20);
+	this->animalhandlingExp->Size = System::Drawing::Size(40, 20);
 	this->animalhandlingExp->Name = L"animalhandlingExp";
 	this->animalhandlingExp->Text = L"-5";
 	this->animalhandlingExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
@@ -49,7 +49,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->animalhandlingLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->animalhandlingLabel);
 	this->animalhandlingLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->animalhandlingLabel->Location = System::Drawing::Point(145, 235);
+	this->animalhandlingLabel->Location = System::Drawing::Point(150, 235);
 	this->animalhandlingLabel->Size = System::Drawing::Size(140, 20);
 	this->animalhandlingLabel->Name = L"animalhandlingLabel";
 	this->animalhandlingLabel->Text = L"Animal Handling (Wis)";
@@ -66,7 +66,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->arcanaExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->arcanaExp);
 	this->arcanaExp->Location = System::Drawing::Point(110, 255);
-	this->arcanaExp->Size = System::Drawing::Size(35, 20);
+	this->arcanaExp->Size = System::Drawing::Size(40, 20);
 	this->arcanaExp->Name = L"arcanaExp";
 	this->arcanaExp->Text = L"-5";
 	this->arcanaExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
@@ -75,7 +75,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->arcanaLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->arcanaLabel);
 	this->arcanaLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->arcanaLabel->Location = System::Drawing::Point(145, 255);
+	this->arcanaLabel->Location = System::Drawing::Point(150, 255);
 	this->arcanaLabel->Size = System::Drawing::Size(120, 20);
 	this->arcanaLabel->Name = L"arcanaLabel";
 	this->arcanaLabel->Text = L"Arcana (Int)";
@@ -92,7 +92,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->athleticsExp);
 	this->athleticsExp->Location = System::Drawing::Point(110, 275);
-	this->athleticsExp->Size = System::Drawing::Size(35, 20);
+	this->athleticsExp->Size = System::Drawing::Size(40, 20);
 	this->athleticsExp->Name = L"athleticsExp";
 	this->athleticsExp->Text = L"-5";
 	this->athleticsExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
@@ -101,7 +101,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->athleticsLabel);
 	this->athleticsLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->athleticsLabel->Location = System::Drawing::Point(145, 275);
+	this->athleticsLabel->Location = System::Drawing::Point(150, 275);
 	this->athleticsLabel->Size = System::Drawing::Size(120, 20);
 	this->athleticsLabel->Name = L"athleticsLabel";
 	this->athleticsLabel->Text = L"Athletics (Str)";
@@ -118,7 +118,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->deceptionExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->deceptionExp);
 	this->deceptionExp->Location = System::Drawing::Point(110, 295);
-	this->deceptionExp->Size = System::Drawing::Size(35, 20);
+	this->deceptionExp->Size = System::Drawing::Size(40, 20);
 	this->deceptionExp->Name = L"deceptionExp";
 	this->deceptionExp->Text = L"-5";
 	this->deceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
@@ -127,7 +127,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->deceptionLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->deceptionLabel);
 	this->deceptionLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->deceptionLabel->Location = System::Drawing::Point(145, 295);
+	this->deceptionLabel->Location = System::Drawing::Point(150, 295);
 	this->deceptionLabel->Size = System::Drawing::Size(120, 20);
 	this->deceptionLabel->Name = L"deceptionLabel";
 	this->deceptionLabel->Text = L"Deception (Cha)";
@@ -144,7 +144,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->historyExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->historyExp);
 	this->historyExp->Location = System::Drawing::Point(110, 315);
-	this->historyExp->Size = System::Drawing::Size(35, 20);
+	this->historyExp->Size = System::Drawing::Size(40, 20);
 	this->historyExp->Name = L"historyExp";
 	this->historyExp->Text = L"-5";
 	this->historyExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
@@ -153,7 +153,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->historyLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->historyLabel);
 	this->historyLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->historyLabel->Location = System::Drawing::Point(145, 315);
+	this->historyLabel->Location = System::Drawing::Point(150, 315);
 	this->historyLabel->Size = System::Drawing::Size(120, 20);
 	this->historyLabel->Name = L"historyLabel";
 	this->historyLabel->Text = L"History (Int)";
@@ -170,7 +170,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->insightExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->insightExp);
 	this->insightExp->Location = System::Drawing::Point(110, 335);
-	this->insightExp->Size = System::Drawing::Size(35, 20);
+	this->insightExp->Size = System::Drawing::Size(40, 20);
 	this->insightExp->Name = L"insightExp";
 	this->insightExp->Text = L"-5";
 	this->insightExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
@@ -179,7 +179,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->insightLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->insightLabel);
 	this->insightLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->insightLabel->Location = System::Drawing::Point(145, 335);
+	this->insightLabel->Location = System::Drawing::Point(150, 335);
 	this->insightLabel->Size = System::Drawing::Size(120, 20);
 	this->insightLabel->Name = L"insightLabel";
 	this->insightLabel->Text = L"Insight (Wis)";
@@ -196,7 +196,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->intimidationExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->intimidationExp);
 	this->intimidationExp->Location = System::Drawing::Point(110, 355);
-	this->intimidationExp->Size = System::Drawing::Size(35, 20);
+	this->intimidationExp->Size = System::Drawing::Size(40, 20);
 	this->intimidationExp->Name = L"intimidationExp";
 	this->intimidationExp->Text = L"-5";
 	this->intimidationExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
@@ -205,7 +205,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->intimidationLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->intimidationLabel);
 	this->intimidationLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->intimidationLabel->Location = System::Drawing::Point(145, 355);
+	this->intimidationLabel->Location = System::Drawing::Point(150, 355);
 	this->intimidationLabel->Size = System::Drawing::Size(120, 20);
 	this->intimidationLabel->Name = L"intimidationLabel";
 	this->intimidationLabel->Text = L"Intimidation (Cha)";
@@ -222,7 +222,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->investigationExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->investigationExp);
 	this->investigationExp->Location = System::Drawing::Point(110, 375);
-	this->investigationExp->Size = System::Drawing::Size(35, 20);
+	this->investigationExp->Size = System::Drawing::Size(40, 20);
 	this->investigationExp->Name = L"investigationExp";
 	this->investigationExp->Text = L"-5";
 	this->investigationExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
@@ -231,7 +231,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->investigationLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->investigationLabel);
 	this->investigationLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->investigationLabel->Location = System::Drawing::Point(145, 375);
+	this->investigationLabel->Location = System::Drawing::Point(150, 375);
 	this->investigationLabel->Size = System::Drawing::Size(120, 20);
 	this->investigationLabel->Name = L"investigationLabel";
 	this->investigationLabel->Text = L"Investigation (Int)";
@@ -248,7 +248,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->medicineExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->medicineExp);
 	this->medicineExp->Location = System::Drawing::Point(110, 395);
-	this->medicineExp->Size = System::Drawing::Size(35, 20);
+	this->medicineExp->Size = System::Drawing::Size(40, 20);
 	this->medicineExp->Name = L"medicineExp";
 	this->medicineExp->Text = L"-5";
 	this->medicineExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
@@ -257,7 +257,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->medicineLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->medicineLabel);
 	this->medicineLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->medicineLabel->Location = System::Drawing::Point(145, 395);
+	this->medicineLabel->Location = System::Drawing::Point(150, 395);
 	this->medicineLabel->Size = System::Drawing::Size(120, 20);
 	this->medicineLabel->Name = L"medicineLabel";
 	this->medicineLabel->Text = L"Medicine (Wis)";
@@ -274,7 +274,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->natureExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->natureExp);
 	this->natureExp->Location = System::Drawing::Point(110, 415);
-	this->natureExp->Size = System::Drawing::Size(35, 20);
+	this->natureExp->Size = System::Drawing::Size(40, 20);
 	this->natureExp->Name = L"natureExp";
 	this->natureExp->Text = L"-5";
 	this->natureExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
@@ -283,7 +283,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->natureLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->natureLabel);
 	this->natureLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->natureLabel->Location = System::Drawing::Point(145, 415);
+	this->natureLabel->Location = System::Drawing::Point(150, 415);
 	this->natureLabel->Size = System::Drawing::Size(120, 20);
 	this->natureLabel->Name = L"natureLabel";
 	this->natureLabel->Text = L"Nature (Int)";
@@ -300,7 +300,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->perceptionExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->perceptionExp);
 	this->perceptionExp->Location = System::Drawing::Point(110, 435);
-	this->perceptionExp->Size = System::Drawing::Size(35, 20);
+	this->perceptionExp->Size = System::Drawing::Size(40, 20);
 	this->perceptionExp->Name = L"perceptionExp";
 	this->perceptionExp->Text = L"-5";
 	this->perceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
@@ -309,7 +309,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->perceptionLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->perceptionLabel);
 	this->perceptionLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->perceptionLabel->Location = System::Drawing::Point(145, 435);
+	this->perceptionLabel->Location = System::Drawing::Point(150, 435);
 	this->perceptionLabel->Size = System::Drawing::Size(120, 20);
 	this->perceptionLabel->Name = L"perceptionLabel";
 	this->perceptionLabel->Text = L"Perception (Wis)";
@@ -326,7 +326,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->performanceExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->performanceExp);
 	this->performanceExp->Location = System::Drawing::Point(110, 455);
-	this->performanceExp->Size = System::Drawing::Size(35, 20);
+	this->performanceExp->Size = System::Drawing::Size(40, 20);
 	this->performanceExp->Name = L"performanceExp";
 	this->performanceExp->Text = L"-5";
 	this->performanceExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
@@ -335,7 +335,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->performanceLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->performanceLabel);
 	this->performanceLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->performanceLabel->Location = System::Drawing::Point(145, 455);
+	this->performanceLabel->Location = System::Drawing::Point(150, 455);
 	this->performanceLabel->Size = System::Drawing::Size(120, 20);
 	this->performanceLabel->Name = L"performanceLabel";
 	this->performanceLabel->Text = L"Performance (Cha)";
@@ -352,7 +352,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->persuasionExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->persuasionExp);
 	this->persuasionExp->Location = System::Drawing::Point(110, 475);
-	this->persuasionExp->Size = System::Drawing::Size(35, 20);
+	this->persuasionExp->Size = System::Drawing::Size(40, 20);
 	this->persuasionExp->Name = L"persuasionExp";
 	this->persuasionExp->Text = L"-5";
 	this->persuasionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
@@ -361,7 +361,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->persuasionLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->persuasionLabel);
 	this->persuasionLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->persuasionLabel->Location = System::Drawing::Point(145, 475);
+	this->persuasionLabel->Location = System::Drawing::Point(150, 475);
 	this->persuasionLabel->Size = System::Drawing::Size(120, 20);
 	this->persuasionLabel->Name = L"persuasionLabel";
 	this->persuasionLabel->Text = L"Persuasion (Cha)";
@@ -378,7 +378,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->religionExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->religionExp);
 	this->religionExp->Location = System::Drawing::Point(110, 495);
-	this->religionExp->Size = System::Drawing::Size(35, 20);
+	this->religionExp->Size = System::Drawing::Size(40, 20);
 	this->religionExp->Name = L"religionExp";
 	this->religionExp->Text = L"-5";
 	this->religionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
@@ -387,7 +387,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->religionLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->religionLabel);
 	this->religionLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->religionLabel->Location = System::Drawing::Point(145, 495);
+	this->religionLabel->Location = System::Drawing::Point(150, 495);
 	this->religionLabel->Size = System::Drawing::Size(120, 20);
 	this->religionLabel->Name = L"religionLabel";
 	this->religionLabel->Text = L"Religion (Int)";
@@ -404,7 +404,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->sleightofhandExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->sleightofhandExp);
 	this->sleightofhandExp->Location = System::Drawing::Point(110, 515);
-	this->sleightofhandExp->Size = System::Drawing::Size(35, 20);
+	this->sleightofhandExp->Size = System::Drawing::Size(40, 20);
 	this->sleightofhandExp->Name = L"sleightofhandExp";
 	this->sleightofhandExp->Text = L"-5";
 	this->sleightofhandExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
@@ -413,7 +413,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->sleightofhandLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->sleightofhandLabel);
 	this->sleightofhandLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->sleightofhandLabel->Location = System::Drawing::Point(145, 515);
+	this->sleightofhandLabel->Location = System::Drawing::Point(150, 515);
 	this->sleightofhandLabel->Size = System::Drawing::Size(140, 20);
 	this->sleightofhandLabel->Name = L"sleightofhandLabel";
 	this->sleightofhandLabel->Text = L"Sleight of Hand (Dex)";
@@ -430,7 +430,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->stealthExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->stealthExp);
 	this->stealthExp->Location = System::Drawing::Point(110, 535);
-	this->stealthExp->Size = System::Drawing::Size(35, 20);
+	this->stealthExp->Size = System::Drawing::Size(40, 20);
 	this->stealthExp->Name = L"stealthExp";
 	this->stealthExp->Text = L"-5";
 	this->stealthExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
@@ -439,7 +439,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->stealthLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->stealthLabel);
 	this->stealthLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->stealthLabel->Location = System::Drawing::Point(145, 535);
+	this->stealthLabel->Location = System::Drawing::Point(150, 535);
 	this->stealthLabel->Size = System::Drawing::Size(120, 20);
 	this->stealthLabel->Name = L"stealthLabel";
 	this->stealthLabel->Text = L"Stealth (Dex)";
@@ -456,7 +456,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->survivalExp = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->survivalExp);
 	this->survivalExp->Location = System::Drawing::Point(110, 555);
-	this->survivalExp->Size = System::Drawing::Size(35, 20);
+	this->survivalExp->Size = System::Drawing::Size(40, 20);
 	this->survivalExp->Name = L"survivalExp";
 	this->survivalExp->Text = L"-5";
 	this->survivalExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
@@ -465,7 +465,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->survivalLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->survivalLabel);
 	this->survivalLabel->Font = (gcnew System::Drawing::Font(L"Times New Roman", 10.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-	this->survivalLabel->Location = System::Drawing::Point(145, 555);
+	this->survivalLabel->Location = System::Drawing::Point(150, 555);
 	this->survivalLabel->Size = System::Drawing::Size(120, 20);
 	this->survivalLabel->Name = L"survivalLabel";
 	this->survivalLabel->Text = L"Survival (Wis)";
