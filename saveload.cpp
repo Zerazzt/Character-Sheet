@@ -15,14 +15,14 @@ void CppCLRWinformsProjekt::application::saveCharacter(System::Object^ send, Sys
 		{"charRace", systostr(this->charRace->Text)},
 		{"charSubrace", systostr(this->charSubrace->Text)}
 	};
-	std::ofstream o("Data/Output/file.json");
+	std::ofstream o("Data/Output/" + systostr(this->charName->Text) + ".json");
 	o << std::setw(4) << character << std::endl;
 	o.close();
 }
 
 void CppCLRWinformsProjekt::application::loadCharacter(System::Object^ send, System::EventArgs^ e)
 {
-	std::ifstream i("Data/Output/file.json");
+	std::ifstream i("Data/Output/" + systostr(this->charName->Text) + ".json");
 	nlohmann::json character;
 	i >> character;
 	i.close();
