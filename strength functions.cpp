@@ -3,10 +3,10 @@
 
 void CppCLRWinformsProjekt::application::updateStrength(System::Object^ send, System::EventArgs^ e)
 {
-	int strengthScore = (int)charStrength->Value;
+	int strengthScore = static_cast<int>(charStrength->Value);
 	int mod = (strengthScore - (strengthScore % 2) - 10) / 2;
 	int pro = stoi(systostr(this->probonValue->Text));
-	this->strMod->Text = this->strtosys(std::to_string(mod));
+	strMod->Text = strtosys(std::to_string(mod));
 	if (strST->Checked)
 	{
 		strST->Text = strtosys(std::to_string(mod + pro));

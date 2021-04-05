@@ -28,6 +28,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->strST->Size = System::Drawing::Size(40, 20);
 	this->strST->Name = L"strST";
 	this->strST->Text = L"-5";
+	this->strST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
 	this->Controls->Add(this->strST);
 
 	this->strSTLabel = (gcnew System::Windows::Forms::Label());

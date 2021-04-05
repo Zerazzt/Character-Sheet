@@ -66,6 +66,11 @@ void CppCLRWinformsProjekt::application::generateAbilityScores(System::Object^ s
 	this->charIntelligence->Value = generateScore();
 	this->charWisdom->Value = generateScore();
 	this->charCharisma->Value = generateScore();
+	this->updateStrength(send, e);
+	this->updateDexterity(send, e);
+	this->updateConstitution(send, e);
+	this->updateWisdom(send, e);
+	this->updateCharisma(send, e);
 }
 
 void CppCLRWinformsProjekt::application::rolld4(System::Object^ send, System::EventArgs^ e)

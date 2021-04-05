@@ -6,7 +6,7 @@ void CppCLRWinformsProjekt::application::updateDexterity(System::Object^ send, S
 	int dexterityScore = (int)charDexterity->Value;
 	int mod = (dexterityScore - (dexterityScore % 2) - 10) / 2;
 	int pro = stoi(systostr(this->probonValue->Text));
-	this->strMod->Text = this->strtosys(std::to_string(mod));
+	this->dexMod->Text = this->strtosys(std::to_string(mod));
 	if (dexST->Checked)
 	{
 		dexST->Text = strtosys(std::to_string(mod + pro));

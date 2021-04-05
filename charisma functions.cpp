@@ -6,7 +6,7 @@ void CppCLRWinformsProjekt::application::updateCharisma(System::Object^ send, Sy
 	int charismaScore = (int)charCharisma->Value;
 	int mod = (charismaScore - (charismaScore % 2) - 10) / 2;
 	int pro = stoi(systostr(this->probonValue->Text));
-	this->strMod->Text = this->strtosys(std::to_string(mod));
+	this->chaMod->Text = this->strtosys(std::to_string(mod));
 	if (chaST->Checked)
 	{
 		chaST->Text = strtosys(std::to_string(mod + pro));

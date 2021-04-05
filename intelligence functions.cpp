@@ -6,7 +6,7 @@ void CppCLRWinformsProjekt::application::updateIntelligence(System::Object^ send
 	int intelligenceScore = (int)charIntelligence->Value;
 	int mod = (intelligenceScore - (intelligenceScore % 2) - 10) / 2;
 	int pro = stoi(systostr(this->probonValue->Text));
-	this->strMod->Text = this->strtosys(std::to_string(mod));
+	this->intMod->Text = this->strtosys(std::to_string(mod));
 	if (intST->Checked)
 	{
 		intST->Text = strtosys(std::to_string(mod + pro));

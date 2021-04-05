@@ -80,6 +80,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsPro->Location = System::Drawing::Point(90, 275);
 	this->athleticsPro->Size = System::Drawing::Size(20, 20);
 	this->athleticsPro->Name = L"athleticsPro";
+	this->athleticsPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
 	this->Controls->Add(this->athleticsPro);
 
 	this->athleticsExp = (gcnew System::Windows::Forms::CheckBox());
@@ -88,6 +89,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsExp->Size = System::Drawing::Size(35, 20);
 	this->athleticsExp->Name = L"athleticsExp";
 	this->athleticsExp->Text = L"-5";
+	this->athleticsExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
 	this->Controls->Add(this->athleticsExp);
 
 	this->athleticsLabel = (gcnew System::Windows::Forms::Label());
