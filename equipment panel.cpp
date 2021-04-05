@@ -21,6 +21,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->CP->Location = System::Drawing::Point(530, 75);
 	this->CP->Size = System::Drawing::Size(100, 20);
 	this->CP->Name = L"CP";
+	this->CP->Maximum = 1000000;
 
 	this->SPLabel = (gcnew System::Windows::Forms::Label());
 	this->SPLabel->Font = (gcnew System::Drawing::Font("Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point));
@@ -33,6 +34,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->SP->Location = System::Drawing::Point(530, 95);
 	this->SP->Size = System::Drawing::Size(100, 20);
 	this->SP->Name = L"SP";
+	this->SP->Maximum = 1000000;
 
 	this->EPLabel = (gcnew System::Windows::Forms::Label());
 	this->EPLabel->Font = (gcnew System::Drawing::Font("Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point));
@@ -45,6 +47,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->EP->Location = System::Drawing::Point(530, 115);
 	this->EP->Size = System::Drawing::Size(100, 20);
 	this->EP->Name = L"EP";
+	this->EP->Maximum = 1000000;
 
 	this->GPLabel = (gcnew System::Windows::Forms::Label());
 	this->GPLabel->Font = (gcnew System::Drawing::Font("Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point));
@@ -57,6 +60,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->GP->Location = System::Drawing::Point(530, 135);
 	this->GP->Size = System::Drawing::Size(100, 20);
 	this->GP->Name = L"GP";
+	this->GP->Maximum = 1000000
 
 	this->PPLabel = (gcnew System::Windows::Forms::Label());
 	this->PPLabel->Font = (gcnew System::Drawing::Font("Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point));
@@ -69,6 +73,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->PP->Location = System::Drawing::Point(530, 155);
 	this->PP->Size = System::Drawing::Size(100, 20);
 	this->PP->Name = L"PP";
+	this->PP->Maximum = 1000000;
 
 	this->gems = (gcnew System::Windows::Forms::TextBox());
 	this->gems->Multiline = true;

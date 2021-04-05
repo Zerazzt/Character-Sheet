@@ -17,6 +17,7 @@ void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
 	this->hitPointMaximum->Location = System::Drawing::Point(430, 75);
 	this->hitPointMaximum->Size = System::Drawing::Size(50, 20);
 	this->hitPointMaximum->Name = L"hitPointMaximum";
+	this->hitPointMaximum->Maximum = 1000;
 	this->Controls->Add(this->hitPointMaximum);
 
 	this->currenthitpointsLabel = (gcnew System::Windows::Forms::Label());
@@ -33,6 +34,7 @@ void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
 	this->currentHitPoints->Location = System::Drawing::Point(430, 95);
 	this->currentHitPoints->Size = System::Drawing::Size(50, 20);
 	this->currentHitPoints->Name = L"currentHitPoints";
+	this->currentHitPoints->Maximum = 1000;
 	this->Controls->Add(this->currentHitPoints);
 
 	this->temporaryhitpointsLabel = (gcnew System::Windows::Forms::Label());
@@ -49,6 +51,7 @@ void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
 	this->temporaryHitPoints->Location = System::Drawing::Point(430, 115);
 	this->temporaryHitPoints->Size = System::Drawing::Size(50, 20);
 	this->temporaryHitPoints->Name = L"temporaryHitPoints";
+	this->temporaryHitPoints->Maximum = 1000;
 	this->Controls->Add(this->temporaryHitPoints);
 
 	this->armourclassLabel = (gcnew System::Windows::Forms::Label());
@@ -97,5 +100,6 @@ void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
 	this->movementSpeed->Location = System::Drawing::Point(430, 175);
 	this->movementSpeed->Size = System::Drawing::Size(50, 20);
 	this->movementSpeed->Name = L"movementSpeed";
+	this->movementSpeed->Maximum = 1000;
 	this->Controls->Add(this->movementSpeed);
 }
