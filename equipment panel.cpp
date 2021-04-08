@@ -60,7 +60,7 @@ void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
 	this->GP->Location = System::Drawing::Point(530, 135);
 	this->GP->Size = System::Drawing::Size(100, 20);
 	this->GP->Name = L"GP";
-	this->GP->Maximum = 1000000
+	this->GP->Maximum = 1000000;
 
 	this->PPLabel = (gcnew System::Windows::Forms::Label());
 	this->PPLabel->Font = (gcnew System::Drawing::Font("Times New Roman", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point));

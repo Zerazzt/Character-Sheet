@@ -84,6 +84,7 @@ void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
 	this->initiativeModifier->Location = System::Drawing::Point(430, 155);
 	this->initiativeModifier->Size = System::Drawing::Size(50, 20);
 	this->initiativeModifier->Name = L"initiativeModifier";
+	this->initiativeModifier->Minimum = -10;
 	this->Controls->Add(this->initiativeModifier);
 
 	this->movementspeedLabel = (gcnew System::Windows::Forms::Label());
