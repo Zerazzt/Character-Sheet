@@ -20,6 +20,7 @@ namespace CppCLRWinformsProjekt {
 			createFeaturesPanel();
 			createSpellsPanel();
 			createNotesPanel();
+			createCharactersPanel();
 		}
 	private:
 		// Loading bar elements
@@ -189,11 +190,17 @@ namespace CppCLRWinformsProjekt {
 		System::Windows::Forms::Button^ featuresButton;
 		System::Windows::Forms::Button^ spellsButton;
 		System::Windows::Forms::Button^ notesButton;
+		System::Windows::Forms::Button^ charactersButton;
 		// Panels
+		System::Windows::Forms::Panel^ charactersPanel;
 		System::Windows::Forms::Panel^ equipmentPanel;
 		System::Windows::Forms::Panel^ featuresPanel;
 		System::Windows::Forms::Panel^ spellsPanel;
 		System::Windows::Forms::Panel^ notesPanel;
+		// Characters panel elements
+		System::Windows::Forms::ComboBox^ characterList;
+		System::Windows::Forms::Button^ openButton;
+		System::Windows::Forms::Button^ deleteButton;
 		// Equipment panel elements
 		System::Windows::Forms::Label^ CPLabel;
 		System::Windows::Forms::NumericUpDown^ CP;
@@ -281,6 +288,7 @@ namespace CppCLRWinformsProjekt {
 		void createFeaturesPanel(void);
 		void createSpellsPanel(void);
 		void createNotesPanel(void);
+		void createCharactersPanel(void);
 
 		void setLevel(System::Object^ send, System::EventArgs^ e);
 		void setClass(System::Object^ send, System::EventArgs^ e);
@@ -291,7 +299,10 @@ namespace CppCLRWinformsProjekt {
 		void randomizeClass(System::Object^ send, System::EventArgs^ e);
 		void randomizeRace(System::Object^ send, System::EventArgs^ e);
 		void saveCharacter(System::Object^ send, System::EventArgs^ e);
-		void loadCharacter(System::Object^ send, System::EventArgs^ e);
+		void load(System::Object^ send, System::EventArgs^ e);
+		void open(System::Object^ send, System::EventArgs^ e);
+		void loadCharacter(std::string name);
+		void deleteCharacter(System::Object^ send, System::EventArgs^ e);
 		void updateStrength(System::Object^ send, System::EventArgs^ e);
 		void updateDexterity(System::Object^ send, System::EventArgs^ e);
 		void updateConstitution(System::Object^ send, System::EventArgs^ e);
@@ -304,6 +315,7 @@ namespace CppCLRWinformsProjekt {
 		void setPanelFeatures(System::Object^ send, System::EventArgs^ e);
 		void setPanelSpells(System::Object^ send, System::EventArgs^ e);
 		void setPanelNotes(System::Object^ send, System::EventArgs^ e);
+		void setPanelCharacters(System::Object^ send, System::EventArgs^ e);
 
 		void rolld4(System::Object^ send, System::EventArgs^ e);
 		void rolld6(System::Object^ send, System::EventArgs^ e);
