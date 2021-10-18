@@ -3,3 +3,6 @@ Debug/
 Release/
 *.vcxproj
 *.vcxproj.filters
+*.vcxproj.users
+*.rc
+*.resx
