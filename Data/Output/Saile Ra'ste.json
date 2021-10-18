@@ -1,0 +1,151 @@
+{
+    "abilityScores": {
+        "charCharisma": 18,
+        "charConstitution": 12,
+        "charDexterity": 18,
+        "charIntelligence": 11,
+        "charStrength": 8,
+        "charWisdom": 9
+    },
+    "armourClass": 15,
+    "charAlignment": "Chaotic Neutral",
+    "charBackground": "Entertainer",
+    "charClass": "Bard",
+    "charLevel": 5,
+    "charRace": "Half-Elf",
+    "charSubclass": "Swords",
+    "charSubrace": "",
+    "currentHitPoints": 30,
+    "equipment": {
+        "CP": 50,
+        "EP": 0,
+        "GP": 18,
+        "PP": 0,
+        "SP": 30,
+        "gems": "",
+        "misc": "Backpack\r\nBedroll\r\nFine clothes\r\nTravellers' clothes\r\nCommon clothes\r\nCostume\r\nCostume\r\nCandle x5\r\nRation x5\r\nWaterskin\r\nDisguise kit\r\nMusical instrument\r\nMusical instrument\r\nTrinket\r\nMap/scroll case\r\nMagic Mouth stone (screeming when someone passes by)\r\nMagic Mouth stone\r\nFrog jump flipbook ring (silver)\r\n     If you giggle at the wheel it will spin on its own\r\n1.5L pitcher half full of watered down halfling hallucinogens\r\nPerson statuette (5 inches from head to foot)\r\n     Not magical but has symbols of power written on it\r\n     Holding something still; deep powerful, primal emotion\r\nFlint shortsword\r\nBoots of the Winterland\r\nPotion of Healing x5\r\n1/3 history book / diary\r\nEar Collection\r\n     Goblin\r\n     Elf\r\n     Harpy",
+        "weapons": "Sabre\r\nSabre\r\nLeather armour\r\nDagger\r\nDagger\r\nDagger\r\nCrossbow quarrel x5"
+    },
+    "features": {
+        "backgroundFeatures": "Darkvision: 60\r\nFey Ancestry",
+        "classFeatures": "--- Bardic Inspiration ---\r\n--- Jack of All Trades ---\r\n--- Song of Rest ---\r\n--- Fighting Style ---\r\n--- Expertise ---\r\n--- Blade Flourish ---\r\n\r\n--- Expertise ---\r\n--- Sneak Attack ---\r\n--- Thieves' Cant ---\r\n\r\n--- Dual Wielder ---",
+        "otherFeatures": "",
+        "raceFeatures": "Common\r\nElvish\r\nSylvan"
+    },
+    "hitPointMaximum": 36,
+    "initiativeModifier": 4,
+    "movementSpeed": 30,
+    "notes": {
+        "notes1": "\"For the purposes of binding.\" Written over directions to the well house.\r\n\r\nHarpy earpiece = mark of loyalty to \"the cause\" \"the boss\"\r\n\r\nHandler in the well\r\nGuarding against both things coming in and coming out of the well.\r\nHave to wear funny hats.\r\n\r\nThe Big Man is pulling off some sort of crazy scheme in Squallport.",
+        "notes2": "Father Gord\r\n   Priest, person who hired the party to investigate the spoiling of the food in Gordsberg.\r\nNick\r\n     Apprentice to Father Gord.\r\nIvan\r\n     Policeman.\r\nDamien.\r\n     At the Dusty Dancer. Owes a debt (20 GP) to The Big Man.\r\nJack\r\n      Works for The Big Man as a collector. Came to collected Damien's debt. Works for Snipes. Also collected from Boroguard (7 GP) and Lin (22 GP).\r\nSnipes\r\n     The Big Man's administrator / accountant / secretary. Called such because he can often guess what happened on a job.\r\nThe Big Man\r\n     Tall but \"well fed\". Wears a feather cape that drapes around his neck. Hat with a feather in it.\r\n     Collects fancy weapons.\r\n     Loanshark.\r\nDan\r\n     Low-level administrator in the Squaleport Police (Ad hoc institution for independent vigilante contractors).\r\nKen\r\n     Former co-worker with Vickmar. Roosting Kodiac.",
+        "notes3": ""
+    },
+    "savingThrows": {
+        "chaST": true,
+        "conST": false,
+        "dexST": true,
+        "intST": false,
+        "strST": false,
+        "wisST": false
+    },
+    "skills": {
+        "acrobatics": {
+            "acrobaticsExp": false,
+            "acrobaticsPro": true
+        },
+        "animalhandling": {
+            "animalhandlingExp": false,
+            "animalhandlingPro": false
+        },
+        "arcana": {
+            "arcanaExp": false,
+            "arcanaPro": false
+        },
+        "athletics": {
+            "athleticsExp": false,
+            "athleticsPro": true
+        },
+        "deception": {
+            "deceptionExp": true,
+            "deceptionPro": true
+        },
+        "history": {
+            "historyExp": false,
+            "historyPro": false
+        },
+        "insight": {
+            "insightExp": false,
+            "insightPro": false
+        },
+        "intimidation": {
+            "intimidationExp": true,
+            "intimidationPro": true
+        },
+        "investigation": {
+            "investigationExp": false,
+            "investigationPro": false
+        },
+        "medicine": {
+            "medicineExp": false,
+            "medicinePro": false
+        },
+        "nature": {
+            "natureExp": false,
+            "naturePro": false
+        },
+        "perception": {
+            "perceptionExp": false,
+            "perceptionPro": true
+        },
+        "performance": {
+            "performanceExp": true,
+            "performancePro": true
+        },
+        "persuasion": {
+            "persuasionExp": true,
+            "persuasionPro": true
+        },
+        "religion": {
+            "religionExp": false,
+            "religionPro": false
+        },
+        "sleightofhand": {
+            "sleightofhandExp": false,
+            "sleightofhandPro": true
+        },
+        "stealth": {
+            "stealthExp": false,
+            "stealthPro": false
+        },
+        "survival": {
+            "survivalExp": false,
+            "survivalPro": false
+        }
+    },
+    "spells": {
+        "cantripsKnown": "Blade Ward\r\nMending\r\nTrue Strike",
+        "level1TotalSlots": 4,
+        "level1UsedSlots": 0,
+        "level2TotalSlots": 3,
+        "level2UsedSlots": 1,
+        "level3TotalSlots": 0,
+        "level3UsedSlots": 0,
+        "level4TotalSlots": 0,
+        "level4UsedSlots": 0,
+        "level5TotalSlots": 0,
+        "level5UsedSlots": 0,
+        "level6TotalSlots": 0,
+        "level6UsedSlots": 0,
+        "level7TotalSlots": 0,
+        "level7UsedSlots": 0,
+        "level8TotalSlots": 0,
+        "level8UsedSlots": 0,
+        "level9TotalSlots": 0,
+        "level9UsedSlots": 0,
+        "spellAttackModifier": 7,
+        "spellComponents": "",
+        "spellSaveDC": 15,
+        "spellsKnown": "Cure Wounds\r\nHealing Word\r\nHeroism\r\nIdentify\r\n\r\nCloud of Daggers\r\nHold Person\r\nMagic Mouth"
+    },
+    "temporaryHitPoints": 0
+}

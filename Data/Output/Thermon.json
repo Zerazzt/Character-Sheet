@@ -1,0 +1,151 @@
+{
+    "abilityScores": {
+        "charCharisma": 13,
+        "charConstitution": 16,
+        "charDexterity": 20,
+        "charIntelligence": 17,
+        "charStrength": 16,
+        "charWisdom": 8
+    },
+    "armourClass": 14,
+    "charAlignment": "Lawful Evil",
+    "charBackground": "Criminal",
+    "charClass": "Rogue",
+    "charLevel": 20,
+    "charRace": "Tiefling",
+    "charSubclass": "Assassin",
+    "charSubrace": "",
+    "currentHitPoints": 156,
+    "equipment": {
+        "CP": 0,
+        "EP": 0,
+        "GP": 0,
+        "PP": 0,
+        "SP": 0,
+        "gems": "",
+        "misc": "",
+        "weapons": ""
+    },
+    "features": {
+        "backgroundFeatures": "--- Crimial Contact ---\r\nYou have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.\r\nCiminal Specialty: hired killer",
+        "classFeatures": "--- Expertise ---\r\nThieves' tools\r\n\r\n--- Sneak Attack ---\r\n10d6\r\n\r\n--- Thieves' Cant ---\r\n\r\n--- Cunning Action ---\r\nDash, Disengage, Hide\r\n\r\n--- Uncanny Dodge ---\r\nReaction to halve the damage from one attack\r\n\r\n--- Evasion ---\r\nHalf damage on failed DEX save, no damage on a success\r\n\r\n--- Reliable Talent ---\r\nWhenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.\r\n\r\n--- Blindsense ---\r\nYou are aware of the location of any hidden or invisible creature with 10 feet of you.\r\n\r\n--- Slippery Mind ---\r\nYou gain proficiency in Wisdom saving throws\r\n\r\n--- Elusive ---\r\nNo attack roll has advantage against you while you aren't incapcitated.\r\n\r\n--- Stroke of Luck ---\r\nIf your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20\r\nOnce you use this feature, you can't use it again until you finish a short or long rest\r\n\r\n--- Assassinate ---\r\nAdvantage on attacks against any creature that hasn't taken a turn yet in combat\r\nAny hit on a surprised creature is a critical hit\r\n\r\n--- Infiltration Expertise\r\n7 days and 25 GP to establish a false identity which can be adopted as a disguise any time after\r\nCreatures believe you to be that person until given an obvious reason not to\r\n\r\n--- Imposter ---\r\nAfter spending at least three hours listening to a person's speech, examining handwritting, and observing mannerisms you can impersonate them\r\nIindiscernible to the casual obersver\r\nIf a wary creature suspects something is amiss, you have advantage on any Charisma (deception) checks you make to avoid detection\r\n\r\n--- Death Strike ---\r\nWhen you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC = 8 + DEX mod + your proficiency bonus). On a failed save, double the damage of your attack against the creature.",
+        "otherFeatures": "--- Languages ---\r\nCommon\r\nInfernal\r\nIgnan\r\n\r\n--- Tool Proficiencies ---\r\nThieves' tools\r\nDisguise kit\r\nPoisoners kit\r\n\r\n",
+        "raceFeatures": "--- Darkvision ---\r\n60 ft.\r\n\r\n--- Hellish Resistance ---\r\nYou have resistance to fire damage\r\n\r\n--- Legacy of Dis ---\r\nYou know the thaumaturgy cantrip\r\nYou can cast disguise self once per long rest\r\nYou can cast detect thoughts once per long rest"
+    },
+    "hitPointMaximum": 156,
+    "initiativeModifier": 5,
+    "movementSpeed": 30,
+    "notes": {
+        "notes1": "",
+        "notes2": "",
+        "notes3": ""
+    },
+    "savingThrows": {
+        "chaST": false,
+        "conST": false,
+        "dexST": true,
+        "intST": true,
+        "strST": false,
+        "wisST": true
+    },
+    "skills": {
+        "acrobatics": {
+            "acrobaticsExp": true,
+            "acrobaticsPro": true
+        },
+        "animalhandling": {
+            "animalhandlingExp": false,
+            "animalhandlingPro": false
+        },
+        "arcana": {
+            "arcanaExp": false,
+            "arcanaPro": false
+        },
+        "athletics": {
+            "athleticsExp": true,
+            "athleticsPro": true
+        },
+        "deception": {
+            "deceptionExp": false,
+            "deceptionPro": true
+        },
+        "history": {
+            "historyExp": false,
+            "historyPro": false
+        },
+        "insight": {
+            "insightExp": false,
+            "insightPro": false
+        },
+        "intimidation": {
+            "intimidationExp": false,
+            "intimidationPro": false
+        },
+        "investigation": {
+            "investigationExp": false,
+            "investigationPro": true
+        },
+        "medicine": {
+            "medicineExp": false,
+            "medicinePro": false
+        },
+        "nature": {
+            "natureExp": false,
+            "naturePro": false
+        },
+        "perception": {
+            "perceptionExp": false,
+            "perceptionPro": false
+        },
+        "performance": {
+            "performanceExp": false,
+            "performancePro": false
+        },
+        "persuasion": {
+            "persuasionExp": false,
+            "persuasionPro": false
+        },
+        "religion": {
+            "religionExp": false,
+            "religionPro": false
+        },
+        "sleightofhand": {
+            "sleightofhandExp": false,
+            "sleightofhandPro": true
+        },
+        "stealth": {
+            "stealthExp": true,
+            "stealthPro": true
+        },
+        "survival": {
+            "survivalExp": false,
+            "survivalPro": false
+        }
+    },
+    "spells": {
+        "cantripsKnown": "",
+        "level1TotalSlots": 0,
+        "level1UsedSlots": 0,
+        "level2TotalSlots": 0,
+        "level2UsedSlots": 0,
+        "level3TotalSlots": 0,
+        "level3UsedSlots": 0,
+        "level4TotalSlots": 0,
+        "level4UsedSlots": 0,
+        "level5TotalSlots": 0,
+        "level5UsedSlots": 0,
+        "level6TotalSlots": 0,
+        "level6UsedSlots": 0,
+        "level7TotalSlots": 0,
+        "level7UsedSlots": 0,
+        "level8TotalSlots": 0,
+        "level8UsedSlots": 0,
+        "level9TotalSlots": 0,
+        "level9UsedSlots": 0,
+        "spellAttackModifier": 0,
+        "spellComponents": "",
+        "spellSaveDC": 0,
+        "spellsKnown": ""
+    },
+    "temporaryHitPoints": 0
+}

@@ -1,0 +1,151 @@
+{
+    "abilityScores": {
+        "charCharisma": 20,
+        "charConstitution": 16,
+        "charDexterity": 8,
+        "charIntelligence": 14,
+        "charStrength": 16,
+        "charWisdom": 14
+    },
+    "armourClass": 22,
+    "charAlignment": "Neutral Evil",
+    "charBackground": "Spy",
+    "charClass": "Paladin",
+    "charLevel": 10,
+    "charRace": "Tabaxi",
+    "charSubclass": "Oathbreaker",
+    "charSubrace": "",
+    "currentHitPoints": 0,
+    "equipment": {
+        "CP": 0,
+        "EP": 0,
+        "GP": 48,
+        "PP": 3,
+        "SP": 12,
+        "gems": "",
+        "misc": "",
+        "weapons": "Shield\r\n\r\nWarhammer"
+    },
+    "features": {
+        "backgroundFeatures": "--- Spy Contact ---\r\nYou have a reliable and trustworthy contact who acts as your liaison to a network of other spies. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.",
+        "classFeatures": "--- Divine Sense ---\r\nThe presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presense you sense, but not its identity. Within the same radius, you calso detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.\r\nYou can use this feature a number of times equal to 1 + CHA mod and regained all expended uses on a long rest.\r\n\r\n--- Lay on Hands ---\r\nPool of hit pointns equal to paladin level times 5\r\nAs an action, touch a creature and heal them from this point\r\n5 hit points from the pool to end one disease or point affecting the target\r\nNo effect on undead or constructs\r\n\r\n--- Divine Smite ---\r\nWhen you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target in addition to the weapon's damage\r\nExtra damage is 1d8 + 1d8 per level of the spell slot\r\nExtra 1d8 against fiends and undead\r\nMaximum of 6d8\r\n\r\n--- Fighting Style ---\r\nDefense: +1 to AC while wearing armour\r\n\r\n--- Spellcasting ---\r\nPrepare a number of spells equal to half your paladin level + CHA mod\r\n\r\n--- Divine Health ---\r\nImmune to disease\r\n\r\n--- Extra Attack ---\r\n\r\n--- Aura of Protection ---\r\nWhenever you or an ally within 10 feet makes a saving throw they get a bonus equal to your CHA mod\r\n\r\n--- Aura of Courage ---\r\nYou and friendly creatures within 10 feet of you can't be frightened\r\n\r\n--- Channel Divinity: Control Undead ---\r\nAs an action, target undead must make a Wisdom saving throw\r\nOn a failed save the target must obey all commands of the paladin for 24 hours or until the paladin uses this channel divinity again\r\n\r\n--- Channel Divinity: Dreadful Aspect ---\r\nEach creature of the paladin's choice within 30 feet must make a Wisdom saving throw if it can see the paladin\r\nOn a fialed save, the target is frightened of the paladin for 1 minute\r\nIf a creature frightened by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it\r\n\r\n--- Aura of Hate ---\r\nThe paladin and any fiends and undead within 10 feet of the paladin gain a bonus to melee weapon damage rolls equal to the paladin's CHA mod",
+        "otherFeatures": "--- Languages ---\r\nCommon\r\nUndercommon\r\nAbyssal\r\nInfernal\r\n\r\n--- Shield Master ---\r\nWhile wearing a shield:\r\n- If you take the attack action, you can use a bonus action to try and shove a creature within 5 feet of you with your shield\r\n- If you aren't incapacitated, you can add your shield's AC bonus to any DEX save made against a spell or other harmful effect that targets only you\r\n- If you are subjected to an effecct that allows you to make a DEX save to take only half damage, you can use your reactio nto take no damage if you succeed on the saving throw",
+        "raceFeatures": "--- Darkvision ---\r\n60 ft.\r\n\r\n--- Feline Agility ---\r\nWhen you move on your turn in combat, you can double your speed until the end of the turn. Once you se this trait, you can't use it again until you move 0 feet on one of your turns\r\n\r\n--- Cat's Claws ---\r\nClimbing speed of 20 ft\r\nMay deal 1d4 + STR slashing damage as an unarmed strike\r\n\r\n--- Cat's Talents ---"
+    },
+    "hitPointMaximum": 97,
+    "initiativeModifier": -1,
+    "movementSpeed": 30,
+    "notes": {
+        "notes1": "",
+        "notes2": "",
+        "notes3": ""
+    },
+    "savingThrows": {
+        "chaST": true,
+        "conST": false,
+        "dexST": false,
+        "intST": false,
+        "strST": false,
+        "wisST": true
+    },
+    "skills": {
+        "acrobatics": {
+            "acrobaticsExp": false,
+            "acrobaticsPro": false
+        },
+        "animalhandling": {
+            "animalhandlingExp": false,
+            "animalhandlingPro": false
+        },
+        "arcana": {
+            "arcanaExp": false,
+            "arcanaPro": false
+        },
+        "athletics": {
+            "athleticsExp": false,
+            "athleticsPro": true
+        },
+        "deception": {
+            "deceptionExp": false,
+            "deceptionPro": false
+        },
+        "history": {
+            "historyExp": false,
+            "historyPro": false
+        },
+        "insight": {
+            "insightExp": false,
+            "insightPro": false
+        },
+        "intimidation": {
+            "intimidationExp": false,
+            "intimidationPro": false
+        },
+        "investigation": {
+            "investigationExp": false,
+            "investigationPro": false
+        },
+        "medicine": {
+            "medicineExp": false,
+            "medicinePro": false
+        },
+        "nature": {
+            "natureExp": false,
+            "naturePro": false
+        },
+        "perception": {
+            "perceptionExp": false,
+            "perceptionPro": true
+        },
+        "performance": {
+            "performanceExp": false,
+            "performancePro": false
+        },
+        "persuasion": {
+            "persuasionExp": false,
+            "persuasionPro": true
+        },
+        "religion": {
+            "religionExp": false,
+            "religionPro": false
+        },
+        "sleightofhand": {
+            "sleightofhandExp": false,
+            "sleightofhandPro": false
+        },
+        "stealth": {
+            "stealthExp": false,
+            "stealthPro": true
+        },
+        "survival": {
+            "survivalExp": false,
+            "survivalPro": false
+        }
+    },
+    "spells": {
+        "cantripsKnown": "",
+        "level1TotalSlots": 4,
+        "level1UsedSlots": 4,
+        "level2TotalSlots": 3,
+        "level2UsedSlots": 2,
+        "level3TotalSlots": 2,
+        "level3UsedSlots": 2,
+        "level4TotalSlots": 0,
+        "level4UsedSlots": 0,
+        "level5TotalSlots": 0,
+        "level5UsedSlots": 0,
+        "level6TotalSlots": 0,
+        "level6UsedSlots": 0,
+        "level7TotalSlots": 0,
+        "level7UsedSlots": 0,
+        "level8TotalSlots": 0,
+        "level8UsedSlots": 0,
+        "level9TotalSlots": 0,
+        "level9UsedSlots": 0,
+        "spellAttackModifier": 9,
+        "spellComponents": "",
+        "spellSaveDC": 17,
+        "spellsKnown": "Crusader's Mantle\r\nProection from Poison\r\nLocate Object\r\nBranding Smite\r\nSearing Smite\r\nShield of Faith\r\nThundrous Smite\r\nCompelled Duel\r\nCure Wounds\r\nHellish Rebuke\r\nInflict Wounds\r\nCrown of Maddness\r\nDarkness\r\nAnimate Dead\r\nBestow Curse"
+    },
+    "temporaryHitPoints": 0
+}
