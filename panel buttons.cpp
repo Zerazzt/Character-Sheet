@@ -47,6 +47,15 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->notesButton->Text = L"Notes";
 	this->notesButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelNotes);
 	this->Controls->Add(this->notesButton);
+
+	this->charactersButton = (gcnew System::Windows::Forms::Button());
+	this->components->Add(this->charactersButton);
+	this->charactersButton->Location = System::Drawing::Point(1000, 575);
+	this->charactersButton->Size = System::Drawing::Size(100, 20);
+	this->charactersButton->Name = L"charactersButton";
+	this->charactersButton->Text = L"Characters";
+	this->charactersButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelCharacters);
+	this->Controls->Add(this->charactersButton);
 }
 
 void CppCLRWinformsProjekt::application::setPanelNone(System::Object^ send, System::EventArgs^ e)
@@ -55,6 +64,7 @@ void CppCLRWinformsProjekt::application::setPanelNone(System::Object^ send, Syst
 	this->featuresPanel->Visible = false;
 	this->spellsPanel->Visible = false;
 	this->notesPanel->Visible = false;
+	this->charactersPanel->Visible = false;
 }
 
 void CppCLRWinformsProjekt::application::setPanelEquipment(System::Object^ send, System::EventArgs^ e)
@@ -62,7 +72,7 @@ void CppCLRWinformsProjekt::application::setPanelEquipment(System::Object^ send,
 	this->featuresPanel->Visible = false;
 	this->spellsPanel->Visible = false;
 	this->notesPanel->Visible = false;
-
+	this->charactersPanel->Visible = false;
 
 	this->equipmentPanel->Visible = true;
 }
@@ -72,7 +82,7 @@ void CppCLRWinformsProjekt::application::setPanelFeatures(System::Object^ send, 
 	this->equipmentPanel->Visible = false;
 	this->spellsPanel->Visible = false;
 	this->notesPanel->Visible = false;
-
+	this->charactersPanel->Visible = false;
 
 	this->featuresPanel->Visible = true;
 }
@@ -82,7 +92,7 @@ void CppCLRWinformsProjekt::application::setPanelSpells(System::Object^ send, Sy
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;
 	this->notesPanel->Visible = false;
-
+	this->charactersPanel->Visible = false;
 
 	this->spellsPanel->Visible = true;
 }
@@ -92,6 +102,17 @@ void CppCLRWinformsProjekt::application::setPanelNotes(System::Object^ send, Sys
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;
 	this->spellsPanel->Visible = false;
+	this->charactersPanel->Visible = false;
 
 	this->notesPanel->Visible = true;
+}
+
+void CppCLRWinformsProjekt::application::setPanelCharacters(System::Object^ send, System::EventArgs^ e)
+{
+	this->equipmentPanel->Visible = false;
+	this->featuresPanel->Visible = false;
+	this->spellsPanel->Visible = false;
+	this->notesPanel->Visible = false;
+
+	this->charactersPanel->Visible = true;
 }

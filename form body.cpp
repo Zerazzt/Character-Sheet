@@ -80,4 +80,18 @@ void CppCLRWinformsProjekt::application::onFormLoad(System::Object^ send, System
 		}
 		raceFile.close();
 	}
+	std::ifstream characterFile;
+	characterFile.open("Data/Input/Characters.txt");
+	if (characterFile.fail())
+	{
+		this->notes1->Text += L"Failed to open character file.";
+	}
+	while (!characterFile.eof())
+	{
+		while (getline(characterFile, line))
+		{
+			this->characterList->Items->Add(this->strtosys(line));
+		}
+		characterFile.close();
+	}
 }

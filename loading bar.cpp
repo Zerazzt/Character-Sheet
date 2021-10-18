@@ -196,6 +196,6 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->LoadButton->Size = System::Drawing::Size(100, 20);
 	this->LoadButton->Name = L"Load";
 	this->LoadButton->Text = L"Load";
-	this->LoadButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::loadCharacter);
+	this->LoadButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::load);
 	this->Controls->Add(this->LoadButton);
 }
