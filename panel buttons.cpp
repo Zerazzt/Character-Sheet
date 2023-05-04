@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createPanelButtons(void)
+void WinformsApplication::application::createPanelButtons(void)
 {
 	this->noneButton = (gcnew System::Windows::Forms::Button());
 	this->components->Add(this->noneButton);
@@ -9,7 +9,7 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->noneButton->Size = System::Drawing::Size(100, 20);
 	this->noneButton->Name = L"noneButton";
 	this->noneButton->Text = L"None";
-	this->noneButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelNone);
+	this->noneButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelNone);
 	this->Controls->Add(this->noneButton);
 
 	this->equipmentButton = (gcnew System::Windows::Forms::Button());
@@ -18,7 +18,7 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->equipmentButton->Size = System::Drawing::Size(100, 20);
 	this->equipmentButton->Name = L"equipmentButton";
 	this->equipmentButton->Text = L"Equipment";
-	this->equipmentButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelEquipment);
+	this->equipmentButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelEquipment);
 	this->Controls->Add(this->equipmentButton);
 
 	this->featuresButton = (gcnew System::Windows::Forms::Button());
@@ -27,7 +27,7 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->featuresButton->Size = System::Drawing::Size(100, 20);
 	this->featuresButton->Name = L"featuresButton";
 	this->featuresButton->Text = L"Features";
-	this->featuresButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelFeatures);
+	this->featuresButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelFeatures);
 	this->Controls->Add(this->featuresButton);
 
 	this->spellsButton = (gcnew System::Windows::Forms::Button());
@@ -36,7 +36,7 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->spellsButton->Size = System::Drawing::Size(100, 20);
 	this->spellsButton->Name = L"spellsButton";
 	this->spellsButton->Text = L"Spells";
-	this->spellsButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelSpells);
+	this->spellsButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelSpells);
 	this->Controls->Add(this->spellsButton);
 
 	this->notesButton = (gcnew System::Windows::Forms::Button());
@@ -45,7 +45,7 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->notesButton->Size = System::Drawing::Size(100, 20);
 	this->notesButton->Name = L"notesButton";
 	this->notesButton->Text = L"Notes";
-	this->notesButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelNotes);
+	this->notesButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelNotes);
 	this->Controls->Add(this->notesButton);
 
 	this->charactersButton = (gcnew System::Windows::Forms::Button());
@@ -54,11 +54,11 @@ void CppCLRWinformsProjekt::application::createPanelButtons(void)
 	this->charactersButton->Size = System::Drawing::Size(100, 20);
 	this->charactersButton->Name = L"charactersButton";
 	this->charactersButton->Text = L"Characters";
-	this->charactersButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setPanelCharacters);
+	this->charactersButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::setPanelCharacters);
 	this->Controls->Add(this->charactersButton);
 }
 
-void CppCLRWinformsProjekt::application::setPanelNone(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelNone(System::Object^ send, System::EventArgs^ e)
 {
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;
@@ -67,7 +67,7 @@ void CppCLRWinformsProjekt::application::setPanelNone(System::Object^ send, Syst
 	this->charactersPanel->Visible = false;
 }
 
-void CppCLRWinformsProjekt::application::setPanelEquipment(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelEquipment(System::Object^ send, System::EventArgs^ e)
 {
 	this->featuresPanel->Visible = false;
 	this->spellsPanel->Visible = false;
@@ -77,7 +77,7 @@ void CppCLRWinformsProjekt::application::setPanelEquipment(System::Object^ send,
 	this->equipmentPanel->Visible = true;
 }
 
-void CppCLRWinformsProjekt::application::setPanelFeatures(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelFeatures(System::Object^ send, System::EventArgs^ e)
 {
 	this->equipmentPanel->Visible = false;
 	this->spellsPanel->Visible = false;
@@ -87,7 +87,7 @@ void CppCLRWinformsProjekt::application::setPanelFeatures(System::Object^ send, 
 	this->featuresPanel->Visible = true;
 }
 
-void CppCLRWinformsProjekt::application::setPanelSpells(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelSpells(System::Object^ send, System::EventArgs^ e)
 {
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;
@@ -97,7 +97,7 @@ void CppCLRWinformsProjekt::application::setPanelSpells(System::Object^ send, Sy
 	this->spellsPanel->Visible = true;
 }
 
-void CppCLRWinformsProjekt::application::setPanelNotes(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelNotes(System::Object^ send, System::EventArgs^ e)
 {
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;
@@ -107,7 +107,7 @@ void CppCLRWinformsProjekt::application::setPanelNotes(System::Object^ send, Sys
 	this->notesPanel->Visible = true;
 }
 
-void CppCLRWinformsProjekt::application::setPanelCharacters(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setPanelCharacters(System::Object^ send, System::EventArgs^ e)
 {
 	this->equipmentPanel->Visible = false;
 	this->featuresPanel->Visible = false;

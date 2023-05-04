@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::updateDexterity(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::updateDexterity(System::Object^ send, System::EventArgs^ e)
 {
 	int dexterityScore = (int)charDexterity->Value;
 	int mod = (dexterityScore - (dexterityScore % 2) - 10) / 2;

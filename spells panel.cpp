@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createSpellsPanel(void)
+void WinformsApplication::application::createSpellsPanel(void)
 {
 	this->spellsPanel = (gcnew System::Windows::Forms::Panel());
 	this->components->Add(this->spellsPanel);

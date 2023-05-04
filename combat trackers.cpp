@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createCombatTrackerElements(void)
+void WinformsApplication::application::createCombatTrackerElements(void)
 {
 	this->hitpointmaximumLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->hitpointmaximumLabel);

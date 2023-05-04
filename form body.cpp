@@ -1,8 +1,7 @@
 #include "pch.h"
 #include "app.h"
-#include <fstream>
 
-void CppCLRWinformsProjekt::application::InitializeFormBody(void)
+void WinformsApplication::application::InitializeFormBody(void)
 {
 	this->components = gcnew System::ComponentModel::Container();
 	this->Name = L"Character_Sheet";
@@ -14,13 +13,14 @@ void CppCLRWinformsProjekt::application::InitializeFormBody(void)
 	this->MinimumSize = System::Drawing::Size(1266, 639);
 	this->SizeGripStyle = System::Windows::Forms::SizeGripStyle::Hide;
 	this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-	this->Load += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::onFormLoad);
+	this->Load += gcnew System::EventHandler(this, &WinformsApplication::application::onFormLoad);
 }
 
-void CppCLRWinformsProjekt::application::onFormLoad(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::onFormLoad(System::Object^ send, System::EventArgs^ e)
 {
 	srand(time(NULL));
 	std::string line;
+
 	std::ifstream backgroundFile;
 	backgroundFile.open("Data/Input/BackgroundOptions.txt");
 	if (backgroundFile.fail())
@@ -80,7 +80,9 @@ void CppCLRWinformsProjekt::application::onFormLoad(System::Object^ send, System
 		}
 		raceFile.close();
 	}
+
 	std::ifstream characterFile;
+	std::vector<std::string> charVec;
 	characterFile.open("Data/Input/Characters.txt");
 	if (characterFile.fail())
 	{
@@ -88,10 +90,12 @@ void CppCLRWinformsProjekt::application::onFormLoad(System::Object^ send, System
 	}
 	while (!characterFile.eof())
 	{
-		while (getline(characterFile, line))
+		while (std::getline(characterFile, line))
 		{
+			charVec.push_back(line);
 			this->characterList->Items->Add(this->strtosys(line));
 		}
 		characterFile.close();
 	}
+	this->characterNames = new CharStore(charVec);
 }

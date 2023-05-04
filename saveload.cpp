@@ -1,26 +1,23 @@
 #include "pch.h"
 #include "app.h"
-#include "json.hpp"
-#include <fstream>
-#include <iomanip>
 
-void CppCLRWinformsProjekt::application::saveCharacter(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::saveCharacter(System::Object^ send, System::EventArgs^ e)
 {
 	nlohmann::json character = {
-		{"charLevel", (int)this->charLevel->Value},
-		{"charBackground", systostr(this->charBackground->Text)},
-		{"charAlignment", systostr(this->charAlignment->Text)},
-		{"charClass", systostr(this->charClass->Text)},
-		{"charSubclass", systostr(this->charSubclass->Text)},
-		{"charRace", systostr(this->charRace->Text)},
-		{"charSubrace", systostr(this->charSubrace->Text)},
-		{"abilityScores", {
-			{"charStrength", (int)this->charStrength->Value},
-			{"charDexterity", (int)this->charDexterity->Value},
-			{"charConstitution", (int)this->charConstitution->Value},
-			{"charIntelligence", (int)this->charIntelligence->Value},
-			{"charWisdom", (int)this->charWisdom->Value},
-			{"charCharisma", (int)this->charCharisma->Value}
+		{"charLevel"		, (int)this->charLevel->Value},
+		{"charBackground"	, systostr(this->charBackground->Text)},
+		{"charAlignment"	, systostr(this->charAlignment->Text)},
+		{"charClass"		, systostr(this->charClass->Text)},
+		{"charSubclass"		, systostr(this->charSubclass->Text)},
+		{"charRace"			, systostr(this->charRace->Text)},
+		{"charSubrace"		, systostr(this->charSubrace->Text)},
+		{"abilityScores"	, {
+			{"charStrength"		, (int)this->charStrength->Value},
+			{"charDexterity"	, (int)this->charDexterity->Value},
+			{"charConstitution"	, (int)this->charConstitution->Value},
+			{"charIntelligence"	, (int)this->charIntelligence->Value},
+			{"charWisdom"		, (int)this->charWisdom->Value},
+			{"charCharisma"		, (int)this->charCharisma->Value}
 		}},
 		{"savingThrows",{
 			{"strST", this->strST->Checked},
@@ -157,23 +154,43 @@ void CppCLRWinformsProjekt::application::saveCharacter(System::Object^ send, Sys
 			{"notes3", systostr(this->notes3->Text)}
 		}}
 	};
+	characterNames->insert(systostr(this->charName->Text));
+	std::ofstream c("Data/Input/Characters.txt");
+	c << *characterNames;
+	c.close();
+	this->characterList->Items->Clear();
+	std::string line;
+	std::ifstream characterFile;
+	characterFile.open("Data/Input/Characters.txt");
+	if (characterFile.fail())
+	{
+		this->notes1->Text += L"Failed to open character file.";
+	}
+	while (!characterFile.eof())
+	{
+		while (std::getline(characterFile, line))
+		{
+			this->characterList->Items->Add(this->strtosys(line));
+		}
+		characterFile.close();
+	}
 	std::ofstream o("Data/Output/" + systostr(this->charName->Text) + ".json");
 	o << std::setw(4) << character << std::endl;
 	o.close();
 }
 
-void CppCLRWinformsProjekt::application::load(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::load(System::Object^ send, System::EventArgs^ e)
 {
 	loadCharacter(systostr(this->charName->Text));
 }
 
-void CppCLRWinformsProjekt::application::open(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::open(System::Object^ send, System::EventArgs^ e)
 {
 	loadCharacter(systostr(this->characterList->Text));
 	this->charName->Text = this->characterList->Text;
 }
 
-void CppCLRWinformsProjekt::application::loadCharacter(std::string name)
+void WinformsApplication::application::loadCharacter(std::string name)
 {
 	std::ifstream i("Data/Output/" + name + ".json");
 	nlohmann::json character;
@@ -280,7 +297,15 @@ void CppCLRWinformsProjekt::application::loadCharacter(std::string name)
 	this->notes3->Text					= strtosys(character["notes"]["notes3"]);
 }
 
-void CppCLRWinformsProjekt::application::deleteCharacter(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::deleteCharacter(System::Object^ send, System::EventArgs^ e)
 {
-
+	std::string s = systostr(this->characterList->Text);
+	if (std::remove(("Data/Output/" + s + ".json").c_str()) == 0)
+	{
+		this->characterNames->remove(s);
+		this->characterList->Items->Remove(strtosys(s));
+		std::ofstream c("Data/Input/Characters.txt");
+		c << *characterNames;
+		c.close();
+	}
 }

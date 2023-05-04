@@ -2,7 +2,7 @@
 #include "app.h"
 #include <fstream>
 
-void CppCLRWinformsProjekt::application::setRace(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setRace(System::Object^ send, System::EventArgs^ e)
 {
 	std::string line;
 	std::ifstream subraceFile;

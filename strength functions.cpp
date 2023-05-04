@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::updateStrength(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::updateStrength(System::Object^ send, System::EventArgs^ e)
 {
 	int strengthScore = static_cast<int>(charStrength->Value);
 	int mod = (strengthScore - (strengthScore % 2) - 10) / 2;

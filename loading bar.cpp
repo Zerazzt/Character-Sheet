@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createLoadBar(void)
+void WinformsApplication::application::createLoadBar(void)
 {
 	this->NameLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(NameLabel);
@@ -32,7 +32,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charLevel->Location = System::Drawing::Point(60, 30);
 	this->charLevel->Name = L"level";
 	this->charLevel->Size = System::Drawing::Size(120, 20);
-	this->charLevel->ValueChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setLevel);
+	this->charLevel->ValueChanged += gcnew System::EventHandler(this, &WinformsApplication::application::setLevel);
 	this->Controls->Add(this->charLevel);
 
 	this->BackgroundLabel = (gcnew System::Windows::Forms::Label());
@@ -84,7 +84,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charClass->Location = System::Drawing::Point(470, 5);
 	this->charClass->Name = L"charClass";
 	this->charClass->Size = System::Drawing::Size(120, 21);
-	this->charClass->SelectedIndexChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setClass);
+	this->charClass->SelectedIndexChanged += gcnew System::EventHandler(this, &WinformsApplication::application::setClass);
 	this->Controls->Add(this->charClass);
 
 	this->SubclassLabel = (gcnew System::Windows::Forms::Label());
@@ -119,7 +119,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->charRace->Location = System::Drawing::Point(660, 5);
 	this->charRace->Name = L"charRace";
 	this->charRace->Size = System::Drawing::Size(120, 21);
-	this->charRace->SelectedIndexChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::setRace);
+	this->charRace->SelectedIndexChanged += gcnew System::EventHandler(this, &WinformsApplication::application::setRace);
 	this->Controls->Add(this->charRace);
 
 	this->SubraceLabel = (gcnew System::Windows::Forms::Label());
@@ -146,7 +146,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeAll->Size = System::Drawing::Size(150, 20);
 	this->RandomizeAll->Name = L"RandomizeAll";
 	this->RandomizeAll->Text = L"Randomize All";
-	this->RandomizeAll->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeAll);
+	this->RandomizeAll->Click += gcnew System::EventHandler(this, &WinformsApplication::application::randomizeAll);
 	this->Controls->Add(this->RandomizeAll);
 
 	this->RandomizeBackground = (gcnew System::Windows::Forms::Button());
@@ -156,7 +156,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeBackground->Size = System::Drawing::Size(150, 20);
 	this->RandomizeBackground->Name = L"RandomizeBackground";
 	this->RandomizeBackground->Text = L"Randomize Background";
-	this->RandomizeBackground->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeBackground);
+	this->RandomizeBackground->Click += gcnew System::EventHandler(this, &WinformsApplication::application::randomizeBackground);
 	this->Controls->Add(this->RandomizeBackground);
 
 	this->RandomizeClass = (gcnew System::Windows::Forms::Button());
@@ -166,7 +166,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeClass->Size = System::Drawing::Size(150, 20);
 	this->RandomizeClass->Name = L"RandomizeClass";
 	this->RandomizeClass->Text = L"Randomize Class";
-	this->RandomizeClass->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeClass);
+	this->RandomizeClass->Click += gcnew System::EventHandler(this, &WinformsApplication::application::randomizeClass);
 	this->Controls->Add(this->RandomizeClass);
 
 	this->RandomizeRace = (gcnew System::Windows::Forms::Button());
@@ -176,7 +176,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->RandomizeRace->Size = System::Drawing::Size(150, 20);
 	this->RandomizeRace->Name = L"RandomizeRace";
 	this->RandomizeRace->Text = L"Randomize Race";
-	this->RandomizeRace->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::randomizeRace);
+	this->RandomizeRace->Click += gcnew System::EventHandler(this, &WinformsApplication::application::randomizeRace);
 	this->Controls->Add(this->RandomizeRace);
 
 	this->SaveButton = (gcnew System::Windows::Forms::Button());
@@ -186,7 +186,7 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->SaveButton->Size = System::Drawing::Size(100, 20);
 	this->SaveButton->Name = L"Save";
 	this->SaveButton->Text = L"Save";
-	this->SaveButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::saveCharacter);
+	this->SaveButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::saveCharacter);
 	this->Controls->Add(this->SaveButton);
 
 	this->LoadButton = (gcnew System::Windows::Forms::Button());
@@ -196,6 +196,6 @@ void CppCLRWinformsProjekt::application::createLoadBar(void)
 	this->LoadButton->Size = System::Drawing::Size(100, 20);
 	this->LoadButton->Name = L"Load";
 	this->LoadButton->Text = L"Load";
-	this->LoadButton->Click += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::load);
+	this->LoadButton->Click += gcnew System::EventHandler(this, &WinformsApplication::application::load);
 	this->Controls->Add(this->LoadButton);
 }

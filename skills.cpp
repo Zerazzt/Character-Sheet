@@ -1,14 +1,14 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createSkills(void)
+void WinformsApplication::application::createSkills(void)
 {
 	this->acrobaticsPro = (gcnew System::Windows::Forms::CheckBox());
 	this->components->Add(this->acrobaticsPro);
 	this->acrobaticsPro->Location = System::Drawing::Point(90, 215);
 	this->acrobaticsPro->Size = System::Drawing::Size(20, 20);
 	this->acrobaticsPro->Name = L"acrobaticsPro";
-	this->acrobaticsPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->acrobaticsPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->acrobaticsPro);
 
 	this->acrobaticsExp = (gcnew System::Windows::Forms::CheckBox());
@@ -17,7 +17,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->acrobaticsExp->Size = System::Drawing::Size(40, 20);
 	this->acrobaticsExp->Name = L"acrobaticsExp";
 	this->acrobaticsExp->Text = L"-5";
-	this->acrobaticsExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->acrobaticsExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->acrobaticsExp);
 
 	this->acrobaticsLabel = (gcnew System::Windows::Forms::Label());
@@ -34,7 +34,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->animalhandlingPro->Location = System::Drawing::Point(90, 235);
 	this->animalhandlingPro->Size = System::Drawing::Size(20, 20);
 	this->animalhandlingPro->Name = L"animalhandlingPro";
-	this->animalhandlingPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->animalhandlingPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->animalhandlingPro);
 
 	this->animalhandlingExp = (gcnew System::Windows::Forms::CheckBox());
@@ -43,7 +43,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->animalhandlingExp->Size = System::Drawing::Size(40, 20);
 	this->animalhandlingExp->Name = L"animalhandlingExp";
 	this->animalhandlingExp->Text = L"-5";
-	this->animalhandlingExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->animalhandlingExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->animalhandlingExp);
 
 	this->animalhandlingLabel = (gcnew System::Windows::Forms::Label());
@@ -60,7 +60,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->arcanaPro->Location = System::Drawing::Point(90, 255);
 	this->arcanaPro->Size = System::Drawing::Size(20, 20);
 	this->arcanaPro->Name = L"arcanaPro";
-	this->arcanaPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->arcanaPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->arcanaPro);
 
 	this->arcanaExp = (gcnew System::Windows::Forms::CheckBox());
@@ -69,7 +69,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->arcanaExp->Size = System::Drawing::Size(40, 20);
 	this->arcanaExp->Name = L"arcanaExp";
 	this->arcanaExp->Text = L"-5";
-	this->arcanaExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->arcanaExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->arcanaExp);
 
 	this->arcanaLabel = (gcnew System::Windows::Forms::Label());
@@ -86,7 +86,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsPro->Location = System::Drawing::Point(90, 275);
 	this->athleticsPro->Size = System::Drawing::Size(20, 20);
 	this->athleticsPro->Name = L"athleticsPro";
-	this->athleticsPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
+	this->athleticsPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateStrength);
 	this->Controls->Add(this->athleticsPro);
 
 	this->athleticsExp = (gcnew System::Windows::Forms::CheckBox());
@@ -95,7 +95,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->athleticsExp->Size = System::Drawing::Size(40, 20);
 	this->athleticsExp->Name = L"athleticsExp";
 	this->athleticsExp->Text = L"-5";
-	this->athleticsExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
+	this->athleticsExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateStrength);
 	this->Controls->Add(this->athleticsExp);
 
 	this->athleticsLabel = (gcnew System::Windows::Forms::Label());
@@ -112,7 +112,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->deceptionPro->Location = System::Drawing::Point(90, 295);
 	this->deceptionPro->Size = System::Drawing::Size(20, 20);
 	this->deceptionPro->Name = L"deceptionPro";
-	this->deceptionPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->deceptionPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->deceptionPro);
 
 	this->deceptionExp = (gcnew System::Windows::Forms::CheckBox());
@@ -121,7 +121,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->deceptionExp->Size = System::Drawing::Size(40, 20);
 	this->deceptionExp->Name = L"deceptionExp";
 	this->deceptionExp->Text = L"-5";
-	this->deceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->deceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->deceptionExp);
 
 	this->deceptionLabel = (gcnew System::Windows::Forms::Label());
@@ -138,7 +138,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->historyPro->Location = System::Drawing::Point(90, 315);
 	this->historyPro->Size = System::Drawing::Size(20, 20);
 	this->historyPro->Name = L"historyPro";
-	this->historyPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->historyPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->historyPro);
 
 	this->historyExp = (gcnew System::Windows::Forms::CheckBox());
@@ -147,7 +147,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->historyExp->Size = System::Drawing::Size(40, 20);
 	this->historyExp->Name = L"historyExp";
 	this->historyExp->Text = L"-5";
-	this->historyExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->historyExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->historyExp);
 
 	this->historyLabel = (gcnew System::Windows::Forms::Label());
@@ -164,7 +164,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->insightPro->Location = System::Drawing::Point(90, 335);
 	this->insightPro->Size = System::Drawing::Size(20, 20);
 	this->insightPro->Name = L"insightPro";
-	this->insightPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->insightPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->insightPro);
 
 	this->insightExp = (gcnew System::Windows::Forms::CheckBox());
@@ -173,7 +173,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->insightExp->Size = System::Drawing::Size(40, 20);
 	this->insightExp->Name = L"insightExp";
 	this->insightExp->Text = L"-5";
-	this->insightExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->insightExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->insightExp);
 
 	this->insightLabel = (gcnew System::Windows::Forms::Label());
@@ -190,7 +190,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->intimidationPro->Location = System::Drawing::Point(90, 355);
 	this->intimidationPro->Size = System::Drawing::Size(20, 20);
 	this->intimidationPro->Name = L"intimidationPro";
-	this->intimidationPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->intimidationPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->intimidationPro);
 
 	this->intimidationExp = (gcnew System::Windows::Forms::CheckBox());
@@ -199,7 +199,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->intimidationExp->Size = System::Drawing::Size(40, 20);
 	this->intimidationExp->Name = L"intimidationExp";
 	this->intimidationExp->Text = L"-5";
-	this->intimidationExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->intimidationExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->intimidationExp);
 
 	this->intimidationLabel = (gcnew System::Windows::Forms::Label());
@@ -216,7 +216,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->investigationPro->Location = System::Drawing::Point(90, 375);
 	this->investigationPro->Size = System::Drawing::Size(20, 20);
 	this->investigationPro->Name = L"investigationPro";
-	this->investigationPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->investigationPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->investigationPro);
 
 	this->investigationExp = (gcnew System::Windows::Forms::CheckBox());
@@ -225,7 +225,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->investigationExp->Size = System::Drawing::Size(40, 20);
 	this->investigationExp->Name = L"investigationExp";
 	this->investigationExp->Text = L"-5";
-	this->investigationExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->investigationExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->investigationExp);
 
 	this->investigationLabel = (gcnew System::Windows::Forms::Label());
@@ -242,7 +242,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->medicinePro->Location = System::Drawing::Point(90, 395);
 	this->medicinePro->Size = System::Drawing::Size(20, 20);
 	this->medicinePro->Name = L"medicinePro";
-	this->medicinePro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->medicinePro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->medicinePro);
 
 	this->medicineExp = (gcnew System::Windows::Forms::CheckBox());
@@ -251,7 +251,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->medicineExp->Size = System::Drawing::Size(40, 20);
 	this->medicineExp->Name = L"medicineExp";
 	this->medicineExp->Text = L"-5";
-	this->medicineExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->medicineExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->medicineExp);
 
 	this->medicineLabel = (gcnew System::Windows::Forms::Label());
@@ -268,7 +268,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->naturePro->Location = System::Drawing::Point(90, 415);
 	this->naturePro->Size = System::Drawing::Size(20, 20);
 	this->naturePro->Name = L"naturePro";
-	this->naturePro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->naturePro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->naturePro);
 
 	this->natureExp = (gcnew System::Windows::Forms::CheckBox());
@@ -277,7 +277,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->natureExp->Size = System::Drawing::Size(40, 20);
 	this->natureExp->Name = L"natureExp";
 	this->natureExp->Text = L"-5";
-	this->natureExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->natureExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->natureExp);
 
 	this->natureLabel = (gcnew System::Windows::Forms::Label());
@@ -294,7 +294,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->perceptionPro->Location = System::Drawing::Point(90, 435);
 	this->perceptionPro->Size = System::Drawing::Size(20, 20);
 	this->perceptionPro->Name = L"perceptionPro";
-	this->perceptionPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->perceptionPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->perceptionPro);
 
 	this->perceptionExp = (gcnew System::Windows::Forms::CheckBox());
@@ -303,7 +303,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->perceptionExp->Size = System::Drawing::Size(40, 20);
 	this->perceptionExp->Name = L"perceptionExp";
 	this->perceptionExp->Text = L"-5";
-	this->perceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->perceptionExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->perceptionExp);
 
 	this->perceptionLabel = (gcnew System::Windows::Forms::Label());
@@ -320,7 +320,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->performancePro->Location = System::Drawing::Point(90, 455);
 	this->performancePro->Size = System::Drawing::Size(20, 20);
 	this->performancePro->Name = L"performancePro";
-	this->performancePro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->performancePro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->performancePro);
 
 	this->performanceExp = (gcnew System::Windows::Forms::CheckBox());
@@ -329,7 +329,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->performanceExp->Size = System::Drawing::Size(40, 20);
 	this->performanceExp->Name = L"performanceExp";
 	this->performanceExp->Text = L"-5";
-	this->performanceExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->performanceExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->performanceExp);
 
 	this->performanceLabel = (gcnew System::Windows::Forms::Label());
@@ -346,7 +346,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->persuasionPro->Location = System::Drawing::Point(90, 475);
 	this->persuasionPro->Size = System::Drawing::Size(20, 20);
 	this->persuasionPro->Name = L"persuasionPro";
-	this->persuasionPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->persuasionPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->persuasionPro);
 
 	this->persuasionExp = (gcnew System::Windows::Forms::CheckBox());
@@ -355,7 +355,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->persuasionExp->Size = System::Drawing::Size(40, 20);
 	this->persuasionExp->Name = L"persuasionExp";
 	this->persuasionExp->Text = L"-5";
-	this->persuasionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->persuasionExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->persuasionExp);
 
 	this->persuasionLabel = (gcnew System::Windows::Forms::Label());
@@ -372,7 +372,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->religionPro->Location = System::Drawing::Point(90, 495);
 	this->religionPro->Size = System::Drawing::Size(20, 20);
 	this->religionPro->Name = L"religionPro";
-	this->religionPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->religionPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->religionPro);
 
 	this->religionExp = (gcnew System::Windows::Forms::CheckBox());
@@ -381,7 +381,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->religionExp->Size = System::Drawing::Size(40, 20);
 	this->religionExp->Name = L"religionExp";
 	this->religionExp->Text = L"-5";
-	this->religionExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->religionExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->religionExp);
 
 	this->religionLabel = (gcnew System::Windows::Forms::Label());
@@ -398,7 +398,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->sleightofhandPro->Location = System::Drawing::Point(90, 515);
 	this->sleightofhandPro->Size = System::Drawing::Size(20, 20);
 	this->sleightofhandPro->Name = L"sleightofhandPro";
-	this->sleightofhandPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->sleightofhandPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->sleightofhandPro);
 
 	this->sleightofhandExp = (gcnew System::Windows::Forms::CheckBox());
@@ -407,7 +407,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->sleightofhandExp->Size = System::Drawing::Size(40, 20);
 	this->sleightofhandExp->Name = L"sleightofhandExp";
 	this->sleightofhandExp->Text = L"-5";
-	this->sleightofhandExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->sleightofhandExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->sleightofhandExp);
 
 	this->sleightofhandLabel = (gcnew System::Windows::Forms::Label());
@@ -424,7 +424,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->stealthPro->Location = System::Drawing::Point(90, 535);
 	this->stealthPro->Size = System::Drawing::Size(20, 20);
 	this->stealthPro->Name = L"stealthPro";
-	this->stealthPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->stealthPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->stealthPro);
 
 	this->stealthExp = (gcnew System::Windows::Forms::CheckBox());
@@ -433,7 +433,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->stealthExp->Size = System::Drawing::Size(40, 20);
 	this->stealthExp->Name = L"stealthExp";
 	this->stealthExp->Text = L"-5";
-	this->stealthExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->stealthExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->stealthExp);
 
 	this->stealthLabel = (gcnew System::Windows::Forms::Label());
@@ -450,7 +450,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->survivalPro->Location = System::Drawing::Point(90, 555);
 	this->survivalPro->Size = System::Drawing::Size(20, 20);
 	this->survivalPro->Name = L"survivalPro";
-	this->survivalPro->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->survivalPro->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->survivalPro);
 
 	this->survivalExp = (gcnew System::Windows::Forms::CheckBox());
@@ -459,7 +459,7 @@ void CppCLRWinformsProjekt::application::createSkills(void)
 	this->survivalExp->Size = System::Drawing::Size(40, 20);
 	this->survivalExp->Name = L"survivalExp";
 	this->survivalExp->Text = L"-5";
-	this->survivalExp->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->survivalExp->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->survivalExp);
 
 	this->survivalLabel = (gcnew System::Windows::Forms::Label());

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createEquipmentPanel(void)
+void WinformsApplication::application::createEquipmentPanel(void)
 {
 	this->equipmentPanel = (gcnew System::Windows::Forms::Panel());
 	this->components->Add(this->equipmentPanel);

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createSavingThrows(void)
+void WinformsApplication::application::createSavingThrows(void)
 {
 	this->probonLabel = (gcnew System::Windows::Forms::Label());
 	this->components->Add(this->probonLabel);
@@ -28,7 +28,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->strST->Size = System::Drawing::Size(45, 20);
 	this->strST->Name = L"strST";
 	this->strST->Text = L"-5";
-	this->strST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateStrength);
+	this->strST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateStrength);
 	this->Controls->Add(this->strST);
 
 	this->strSTLabel = (gcnew System::Windows::Forms::Label());
@@ -47,7 +47,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->dexST->Size = System::Drawing::Size(45, 20);
 	this->dexST->Name = L"dexST";
 	this->dexST->Text = L"-5";
-	this->dexST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateDexterity);
+	this->dexST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateDexterity);
 	this->Controls->Add(this->dexST);
 
 	this->dexSTLabel = (gcnew System::Windows::Forms::Label());
@@ -66,7 +66,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->conST->Size = System::Drawing::Size(45, 20);
 	this->conST->Name = L"conST";
 	this->conST->Text = L"-5";
-	this->conST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateConstitution);
+	this->conST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateConstitution);
 	this->Controls->Add(this->conST);
 
 	this->conSTLabel = (gcnew System::Windows::Forms::Label());
@@ -85,7 +85,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->intST->Size = System::Drawing::Size(45, 20);
 	this->intST->Name = L"intST";
 	this->intST->Text = L"-5";
-	this->intST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateIntelligence);
+	this->intST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateIntelligence);
 	this->Controls->Add(this->intST);
 
 	this->intSTLabel = (gcnew System::Windows::Forms::Label());
@@ -104,7 +104,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->wisST->Size = System::Drawing::Size(45, 20);
 	this->wisST->Name = L"wisST";
 	this->wisST->Text = L"-5";
-	this->wisST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateWisdom);
+	this->wisST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateWisdom);
 	this->Controls->Add(this->wisST);
 
 	this->wisSTLabel = (gcnew System::Windows::Forms::Label());
@@ -123,7 +123,7 @@ void CppCLRWinformsProjekt::application::createSavingThrows(void)
 	this->chaST->Size = System::Drawing::Size(45, 20);
 	this->chaST->Name = L"chaST";
 	this->chaST->Text = L"-5";
-	this->chaST->CheckStateChanged += gcnew System::EventHandler(this, &CppCLRWinformsProjekt::application::updateCharisma);
+	this->chaST->CheckStateChanged += gcnew System::EventHandler(this, &WinformsApplication::application::updateCharisma);
 	this->Controls->Add(this->chaST);
 
 	this->chaSTLabel = (gcnew System::Windows::Forms::Label());

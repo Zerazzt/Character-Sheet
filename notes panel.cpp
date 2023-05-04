@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createNotesPanel(void)
+void WinformsApplication::application::createNotesPanel(void)
 {
 	this->notesPanel = (gcnew System::Windows::Forms::Panel());
 	this->components->Add(this->notesPanel);

@@ -1,20 +1,23 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::updateCharisma(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::updateCharisma(System::Object^ send, System::EventArgs^ e)
 {
-	int charismaScore = (int)charCharisma->Value;
-	int mod = (charismaScore - (charismaScore % 2) - 10) / 2;
-	int pro = stoi(systostr(this->probonValue->Text));
-	this->chaMod->Text = this->strtosys(std::to_string(mod));
-	if (chaST->Checked)
+	int charismaScore = (int)charCharisma->Value; // Store the character's ability score
+	int mod = (charismaScore - (charismaScore % 2) - 10) / 2; // Calculate the ability modifier
+	int pro = stoi(systostr(this->probonValue->Text)); // Store the character's proficiency bonus
+	this->chaMod->Text = this->strtosys(std::to_string(mod)); // Set the text of the appropriate element to the calculated modifier
+
+	if (chaST->Checked) // If the character has proficiency in saving throws:
 	{
-		chaST->Text = strtosys(std::to_string(mod + pro));
+		chaST->Text = strtosys(std::to_string(mod + pro)); // Set the text of the appropriate element to include both the modifier and the proficiency bonus
 	}
-	else
+	else // Otherwise:
 	{
-		chaST->Text = strtosys(std::to_string(mod));
+		chaST->Text = strtosys(std::to_string(mod)); // Set the text of the appropriate element to include only the modifier
 	}
+
+	// Modifycing skill check bonuses
 	if (deceptionPro->Checked)
 	{
 		if (deceptionExp->Checked)

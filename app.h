@@ -1,8 +1,15 @@
 #pragma once
+#include "pch.h"
+#include "json.hpp"
+#include "CharStore.h"
+#include <fstream>
+#include <iomanip>
 #include <string>
 #include <time.h>
+#include <vector>
+#include <iostream>
 
-namespace CppCLRWinformsProjekt {
+namespace WinformsApplication {
 	public ref class application : public System::Windows::Forms::Form
 	{
 	public:
@@ -262,6 +269,7 @@ namespace CppCLRWinformsProjekt {
 		System::Windows::Forms::TextBox^ notes1;
 		System::Windows::Forms::TextBox^ notes2;
 		System::Windows::Forms::TextBox^ notes3;
+		CharStore* characterNames;
 
 	~application()
 	{

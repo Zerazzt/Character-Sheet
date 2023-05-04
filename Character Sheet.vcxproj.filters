@@ -32,6 +32,9 @@
     <ClInclude Include="json.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="CharStore.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinformsProjekt.cpp">
@@ -110,6 +113,12 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="proficiency.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="characters panel.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CharStore.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

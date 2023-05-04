@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::setLevel(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setLevel(System::Object^ send, System::EventArgs^ e)
 {
 	int level = (int)this->charLevel->Value;
 	int pro = (level - (level - 1) % 4 + 8) / 4;

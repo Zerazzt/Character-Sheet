@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::updateWisdom(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::updateWisdom(System::Object^ send, System::EventArgs^ e)
 {
 	int wisdomScore = (int)charWisdom->Value;
 	int mod = (wisdomScore - (wisdomScore % 2) - 10) / 2;

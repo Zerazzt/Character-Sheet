@@ -146,6 +146,7 @@
     <ClInclude Include="app.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CharStore.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -153,7 +154,9 @@
   <ItemGroup>
     <ClCompile Include="ability scores.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="characters panel.cpp" />
     <ClCompile Include="charisma functions.cpp" />
+    <ClCompile Include="CharStore.cpp" />
     <ClCompile Include="class.cpp" />
     <ClCompile Include="combat trackers.cpp" />
     <ClCompile Include="constitution functions.cpp" />

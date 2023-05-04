@@ -10,7 +10,7 @@ int random(int min, int max)
 	return rand() % (max - min + 1) + min;
 }
 
-void CppCLRWinformsProjekt::application::randomizeAll(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::randomizeAll(System::Object^ send, System::EventArgs^ e)
 {
 	randomizeBackground(send, e);
 	randomizeAlignment(send, e);
@@ -18,23 +18,23 @@ void CppCLRWinformsProjekt::application::randomizeAll(System::Object^ send, Syst
 	randomizeRace(send, e);
 }
 
-void CppCLRWinformsProjekt::application::randomizeBackground(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::randomizeBackground(System::Object^ send, System::EventArgs^ e)
 {
 	this->charBackground->SelectedIndex = random(0, this->charBackground->Items->Count - 1);
 }
 
-void CppCLRWinformsProjekt::application::randomizeAlignment(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::randomizeAlignment(System::Object^ send, System::EventArgs^ e)
 {
 	this->charAlignment->SelectedIndex = random(0, this->charAlignment->Items->Count - 1);
 }
 
-void CppCLRWinformsProjekt::application::randomizeClass(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::randomizeClass(System::Object^ send, System::EventArgs^ e)
 {
 	this->charClass->SelectedIndex = random(0, this->charClass->Items->Count - 1);
 	this->charSubclass->SelectedIndex = random(0, this->charSubclass->Items->Count - 1);
 }
 
-void CppCLRWinformsProjekt::application::randomizeRace(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::randomizeRace(System::Object^ send, System::EventArgs^ e)
 {
 	this->charRace->SelectedIndex = random(0, this->charRace->Items->Count - 1);
 	this->charSubrace->SelectedIndex = random(0, this->charSubrace->Items->Count - 1);
@@ -58,7 +58,7 @@ int generateScore()
 	return sum - lowest;
 }
 
-void CppCLRWinformsProjekt::application::generateAbilityScores(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::generateAbilityScores(System::Object^ send, System::EventArgs^ e)
 {
 	this->charStrength->Value = generateScore();
 	this->charDexterity->Value = generateScore();
@@ -73,7 +73,7 @@ void CppCLRWinformsProjekt::application::generateAbilityScores(System::Object^ s
 	this->updateCharisma(send, e);
 }
 
-void CppCLRWinformsProjekt::application::rolld4(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld4(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd4->Value == 0)
 	{
@@ -94,7 +94,7 @@ void CppCLRWinformsProjekt::application::rolld4(System::Object^ send, System::Ev
 	this->d4Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld6(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld6(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd6->Value == 0)
 	{
@@ -115,7 +115,7 @@ void CppCLRWinformsProjekt::application::rolld6(System::Object^ send, System::Ev
 	this->d6Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld8(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld8(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd8->Value == 0)
 	{
@@ -136,7 +136,7 @@ void CppCLRWinformsProjekt::application::rolld8(System::Object^ send, System::Ev
 	this->d8Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld10(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld10(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd10->Value == 0)
 	{
@@ -157,7 +157,7 @@ void CppCLRWinformsProjekt::application::rolld10(System::Object^ send, System::E
 	this->d10Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld12(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld12(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd12->Value == 0)
 	{
@@ -178,7 +178,7 @@ void CppCLRWinformsProjekt::application::rolld12(System::Object^ send, System::E
 	this->d12Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld20(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld20(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd20->Value == 0)
 	{
@@ -199,7 +199,7 @@ void CppCLRWinformsProjekt::application::rolld20(System::Object^ send, System::E
 	this->d20Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolld100(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolld100(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->nd100->Value == 0)
 	{
@@ -220,7 +220,7 @@ void CppCLRWinformsProjekt::application::rolld100(System::Object^ send, System::
 	this->d100Result->Text = this->strtosys(std::to_string(total));
 }
 
-void CppCLRWinformsProjekt::application::rolldX(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::rolldX(System::Object^ send, System::EventArgs^ e)
 {
 	if (this->ndX->Value == 0)
 	{

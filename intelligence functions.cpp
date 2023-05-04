@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::updateIntelligence(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::updateIntelligence(System::Object^ send, System::EventArgs^ e)
 {
 	int intelligenceScore = (int)charIntelligence->Value;
 	int mod = (intelligenceScore - (intelligenceScore % 2) - 10) / 2;

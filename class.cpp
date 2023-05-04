@@ -2,7 +2,7 @@
 #include "app.h"
 #include <fstream>
 
-void CppCLRWinformsProjekt::application::setClass(System::Object^ send, System::EventArgs^ e)
+void WinformsApplication::application::setClass(System::Object^ send, System::EventArgs^ e)
 {
 	std::string line;
 	std::ifstream subclassFile;

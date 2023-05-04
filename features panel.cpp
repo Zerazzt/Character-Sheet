@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "app.h"
 
-void CppCLRWinformsProjekt::application::createFeaturesPanel(void)
+void WinformsApplication::application::createFeaturesPanel(void)
 {
 	this->featuresPanel = (gcnew System::Windows::Forms::Panel());
 	this->components->Add(this->featuresPanel);
